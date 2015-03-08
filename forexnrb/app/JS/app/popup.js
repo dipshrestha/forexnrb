@@ -94,14 +94,13 @@ var exchangeDataLoader = {
     showGetResponseData: function (respData) {
         //alert('test');
         var xmlDoc = respData.target.responseXML;
-       // alert(xmlDoc);
+        document.getElementById('curDate').innerHTML = d;
        var x = xmlDoc.getElementsByTagName("CurrencyConversionResponse");
        var innerval = "";
        var jsonArr = [];
        var chartD = [];
        var todayDate=day+'-'+month+'-'+year;
-        for (i = 0; i < x.length; i++) {
-           // document.getElementById('curDate').innerHTML = d;
+        for (i = 0; i < x.length; i++) {          
             var ConversionTime = x[i].getElementsByTagName("ConversionTime")[0].childNodes[0].nodeValue;
 
             var from = x[i].getElementsByTagName("BaseCurrency")[0].childNodes[0].nodeValue;
@@ -140,7 +139,7 @@ var exchangeDataLoader = {
            var chart = new CanvasJS.Chart("chartContainer", {
             theme: "theme2",//theme1
             title: {
-                text: "Basic Column Chart - CanvasJS"
+                text: "USD/NRS 7 days trend"
             },
             animationEnabled: false,   // change to true
             data: [

@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Hello World  Chrome Plug-in",
-  "description": "This extension demonstrates a browser action with kittens.",
+  "name": "Foreign Currency Exchange Rate - Nepal Rastra Bank",
+  "description": "Foreign Currency Exchange Rate - Nepal Rastra Bank.",
   "version": "1.0",
 
   "permissions": ["http://www.nrb.org.np//*/"],
