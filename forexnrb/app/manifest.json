@@ -11,7 +11,7 @@
     "default_popup": "popup.html"
   },
   "content_scripts": [{
-      "js": ["jquery-1.2.6.js", "jquery.xml2json.js"],
+      "js": ["JS/lib/jquery-1.2.6.js", "JS/lib/jquery.xml2json.js"],
 	  "matches":["*://*/*"],
 	  "run_at":"document_start"
     }]

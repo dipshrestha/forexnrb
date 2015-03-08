@@ -1,14 +1,13 @@
-// Copyright (c) 2012 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+/*
+File:           popup.js
+Version:        1.0
+Last changed:   2015/03/08
+Purpose:        Javascript functions to populate data into popup
+Author:         Sharad Subedi
+Copyright:      
+Product:        foreign currency exchange NRB
+*/
 
-/**
- * Global variable containing the query we'd like to pass to Flickr. In this
- * case, kittens!
- *
- * @type {string}
- */
-var QUERY = 'kittens';
 var exURl = "http://rate-exchange.appspot.com/currency?from=USD&to=EUR";
 var d = new Date();
 var month = ("0" + (d.getMonth() + 1)).slice(-2);
@@ -21,9 +20,8 @@ var month1 = ("0" + (d1.getMonth() + 1)).slice(-2);
 var day1 = ("0" + d1.getDate()).slice(-2);
 var year1 = d1.getFullYear();
 
-//alert(d1);
 
-var kittenGenerator = {
+var exchangeDataLoader = {
     /**
      * Flickr URL that will give us lots and lots of whatever we're looking for.
      *
@@ -85,24 +83,7 @@ var kittenGenerator = {
 
         //        return jsonArr;
               
-        //        var chart = new CanvasJS.Chart("chartContainer", {
-        //            theme: "theme2",
-        //            title: {
-        //                text: "Basic Column Chart - CanvasJS"
-        //            },
-        //            animationEnabled: true, 
-        //            data: [
-        //            {
-        //                // Change type to "bar", "splineArea", "area", "spline", "pie",etc.
-        //                type: "column",
-        //                dataPoints: jsonArr
-        //            }
-        //            ]
-        //        });
-        //        chart.render();
-               
-        //    }
-            
+                  
         //}
       
         req.send(null);
@@ -143,14 +124,8 @@ var kittenGenerator = {
                     y: parseFloat(rate)
                 })
             }
-
-
-
         }
-       // var jsonData = eval(jsonArr);
-       // alert(jsonData);
-      //  alert(jsonData[0].label);
-       // alert(jsonData[0].y);
+
         this.generateChart(chartD);
 
         
@@ -177,48 +152,10 @@ var kittenGenerator = {
             ]
         });
         chart.render();
-    }
-
-    /**
-     * Handle the 'onload' event of our kitten XHR request, generated in
-     * 'requestKittens', by generating 'img' elements, and stuffing them into
-     * the document for display.
-     *
-     * @param {ProgressEvent} e The XHR ProgressEvent.
-     * @private
-     */
-    /*
-  showPhotos_: function (e) {
-    var kittens = e.target.responseXML.querySelectorAll('photo');
-    for (var i = 0; i < kittens.length; i++) {
-      var img = document.createElement('img');
-      img.src = this.constructKittenURL_(kittens[i]);
-      img.setAttribute('alt', kittens[i].getAttribute('title'));
-      document.body.appendChild(img);
-    }
-  },
-  */
-
-    /**
-     * Given a photo, construct a URL using the method outlined at
-     * http://www.flickr.com/services/api/misc.urlKittenl
-     *
-     * @param {DOMElement} A kitten.
-     * @return {string} The kitten's URL.
-     * @private
-     */
-    /*
-  constructKittenURL_: function (photo) {
-    return "http://farm" + photo.getAttribute("farm") +
-        ".static.flickr.com/" + photo.getAttribute("server") +
-        "/" + photo.getAttribute("id") +
-        "_" + photo.getAttribute("secret") +
-        "_s.jpg";
-  }*/
+    }  
 };
 
-// Run our kitten generation script as soon as the document's DOM is ready.
+// Run exchangeDataLoader  script as DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
-     kittenGenerator.LoadExchangeRate();
-    //alert(result);
+    exchangeDataLoader.LoadExchangeRate();
 });
