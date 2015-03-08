@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="" ng-csp>
+<head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+        body {
+            min-width: 357px;
+            overflow-x: hidden;
+        }
+
+        img {
+            margin: 5px;
+            border: 2px solid black;
+            vertical-align: middle;
+            width: 75px;
+            height: 75px;
+        }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="popup.js"></script>
+    <script src="jquery-1.2.6.js"></script>
+    <script src="jquery.xml2json.js"></script>
+    <script src="angular.min.js">
+    </script>
+    <script src="canvasjs.min.js"></script>
+    <script src="jsonpath-0.8.0.js"></script>
+</head>
+
+<body>
+
+
+        <h2>Calculating Exchange Rate for NRS</h2>
+        <label for="url" style="font-weight:bold">Foreign Exchange Rate</label><br />
+        <div id="curDate" style="font-weight:bold"></div><br />
+        <div id="header"> <b>Base Currency</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Exchange Rate</b> </div>
+        <div id="exchangeRate">
+
+        </div>
+    <div id="chartContainer" style="height: 200px; width: 100%;"></div>
+    
+</body>
+</html>
