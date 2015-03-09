@@ -14,13 +14,13 @@ var month = ("0" + (d.getMonth() + 1)).slice(-2);
 var day = ("0" + d.getDate()).slice(-2);
 var year = d.getFullYear();
 var d1 = new Date();
-d1.setDate(d1.getDate() - 15);
+d1.setDate(d1.getDate() - 7);
 
 var month1 = ("0" + (d1.getMonth() + 1)).slice(-2);
 var day1 = ("0" + d1.getDate()).slice(-2);
 var year1 = d1.getFullYear();
-
-
+var curBaseCurrency = 'USD';// document.getElementById("baseCur").value;
+var chartType = "line";
 var exchangeDataLoader = {
     /**
      * Flickr URL that will give us lots and lots of whatever we're looking for.
@@ -106,17 +106,18 @@ var exchangeDataLoader = {
             var from = x[i].getElementsByTagName("BaseCurrency")[0].childNodes[0].nodeValue;
             var to = x[i].getElementsByTagName("TargetCurrency")[0].childNodes[0].nodeValue;
             var rate = x[i].getElementsByTagName("ConversionRate")[0].childNodes[0].nodeValue;
-            if (ConversionTime == todayDate) {
-                innerval = innerval + "<div>" + from + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + rate + "</div>";
+           // alert(curBaseCurrency);
+            if (ConversionTime == todayDate && from == curBaseCurrency) {
+                innerval = innerval + "<div> Today's exchange rate 1&nbsp;&nbsp;" + from + " = " + rate + "&nbsp;&nbsp;"+to+"</div>";
             }
-            jsonArr.push({
-                TargetCurrency: from,
-                ConversionRate: parseFloat(rate),
-                ConversionTime: ConversionTime
+            //jsonArr.push({
+            //    TargetCurrency: from,
+            //    ConversionRate: parseFloat(rate),
+            //    ConversionTime: ConversionTime
 
-            });
+            //});
 
-            if (from == 'USD')
+            if (from == curBaseCurrency)
             {
                 chartD.push({
                     label: new String(ConversionTime),
@@ -139,13 +140,16 @@ var exchangeDataLoader = {
            var chart = new CanvasJS.Chart("chartContainer", {
             theme: "theme2",//theme1
             title: {
-                text: "USD/NRS 7 days trend"
+                text: curBaseCurrency+"/NRS 7 days trend"
             },
             animationEnabled: false,   // change to true
+            //axisY:{
+            //    minimum: 50
+            //},
             data: [
             {
                 // Change type to "bar", "splineArea", "area", "spline", "pie",etc.
-                type: "column",
+                type: chartType,
                 dataPoints: chartData               
             }
             ]
@@ -157,4 +161,21 @@ var exchangeDataLoader = {
 // Run exchangeDataLoader  script as DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
     exchangeDataLoader.LoadExchangeRate();
+    document.querySelector('#baseCur').addEventListener('change', changeBaseCur);
+    document.querySelector('#hrLine').addEventListener('click', ChooseChartType());
+    document.querySelector('#hrColumn').addEventListener('click', ChooseChartType());
 });
+
+
+
+function changeBaseCur() {
+    var x = document.getElementById("baseCur").value;
+    curBaseCurrency = x;
+    exchangeDataLoader.LoadExchangeRate();
+}
+
+function ChooseChartType(button) {
+    chartType = 'column';
+    //alert(chartType);
+   // exchangeDataLoader.generateChart();
+};

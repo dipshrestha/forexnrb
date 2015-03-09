@@ -28,17 +28,45 @@
     <script src="JS/lib/canvasjs.min.js"></script>
     <script src="JS/lib/jquery-1.2.6.js"></script>
     <script src="JS/lib/jquery.xml2json.js"></script>
-  
+
 </head>
 
 <body>
-        <label for="url" style="font-weight: bold; font-size: medium">Today's Exchange Rate</label><br />
-        <div id="curDate" style="font-weight:bold" ></div><br />
-        <div id="header"> <b>Base Currency</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Exchange Rate</b> </div>
-        <div id="exchangeRate">
+    <label for="url" style="font-weight: bold; font-size: medium">Today's Exchange Rate</label><br />
+    <div id="curDate" style="font-weight:bold"></div><br />
+    <div>
 
+        <label for="url" style="font-weight:bold">Base Currency:</label>
+        <select id="baseCur">
+            <option>USD</option>
+            <option>INR</option>
+            <option>EUR</option>
+            <option>GBP</option>
+            <option>CHF</option>
+            <option>AUD</option>
+            <option>CAD</option>
+            <option>SGD</option>
+            <option>JPY</option>
+            <option>CNH</option>
+            <option>SAR</option>
+            <option>QAR</option>
+            <option>THB</option>
+            <option>AED</option>
+            <option>MYR</option>
+            <option>KPW</option>
+        </select>
+    </div>
+    <!--<div id="header"> <b>Base Currency</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Exchange Rate</b> </div>-->
+    <br />
+    <div id="exchangeRate">
+
+    </div>
+    <div>
+        <div id="chartContainer" style="float:left;height: 200px; width: 100%;" ></div>
+        <div style="float:left"> Chart type <br/>
+            <a  id="hrLine" href="#">Line</a>|
+            <a id="hrColumn" href="#">Column</a>
         </div>
-    <div id="chartContainer" style="height: 200px; width: 100%;"></div>
-    
+    </div>
 </body>
 </html>
