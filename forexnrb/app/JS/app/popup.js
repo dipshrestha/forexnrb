@@ -20,7 +20,7 @@ var month1 = ("0" + (d1.getMonth() + 1)).slice(-2);
 var day1 = ("0" + d1.getDate()).slice(-2);
 var year1 = d1.getFullYear();
 var curBaseCurrency = 'USD';// document.getElementById("baseCur").value;
-var chartType = "line";
+var chartType = "column";
 var exchangeDataLoader = {
     /**
      * Flickr URL that will give us lots and lots of whatever we're looking for.
@@ -39,61 +39,32 @@ var exchangeDataLoader = {
      *
      * @public
      */
-    LoadExchangeRate: function () {
-
-     // alert(this.getExchangeRateUrl);
+    LoadExchangeRate: function () {     
         var abc = [];       
         var req = new XMLHttpRequest();
         req.open("GET", this.getExchangeRateUrl, true);
         req.onload = this.showGetResponseData.bind(this);
-        //req.onreadystatechange = function () {
-        //    if (req.readyState == 4 && req.status == 200) {
-        //        // alert(req.responseText);
               
-        //        var xmlDoc = req.responseXML;
-        //        // var json = $.xml2json(xmlDoc);
-        //        //alert(json.CurrencyConversion[0]);
-        //        //alert(json.CurrencyConversion.CurrencyConversionResponse[0].BaseCurrency.text);//["CurrencyConversionResponse"]);
-        //        var x = xmlDoc.getElementsByTagName("CurrencyConversionResponse");
-             
-        //        var innerval = "";
-
-        //        for (i = 0; i < x.length; i++) {
-
-        //            document.getElementById('curDate').innerHTML = d;
-        //            var ConversionTime = x[i].getElementsByTagName("ConversionTime")[0].childNodes[0].nodeValue;
-
-        //            var from = x[i].getElementsByTagName("BaseCurrency")[0].childNodes[0].nodeValue;
-        //            var to = x[i].getElementsByTagName("TargetCurrency")[0].childNodes[0].nodeValue;
-        //            var rate = x[i].getElementsByTagName("ConversionRate")[0].childNodes[0].nodeValue;
-        //            innerval = innerval + "<div>" + from + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + rate + "</div>";
-
-        //            jsonArr.push({
-        //                label:from,
-        //                y:  parseFloat(rate)
-        //            });
-
-                   
-        //        }
-
-        //       // abc = jsonArr;
-             
-
-        //        document.getElementById("exchangeRate").innerHTML = innerval;
-
-        //        return jsonArr;
-              
-                  
-        //}
-      
-        req.send(null);
-      //  alert(JSON.stringify(jsonArr));
-     
+        req.send(null);     
     },
 
     showGetResponseData: function (respData) {
         //alert('test');
         var xmlDoc = respData.target.responseXML;
+		
+		//get country specific exchabge rate for given period
+		var path="/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\']/ConversionRate";
+		var nodes=xmlDoc.evaluate(path, xmlDoc, null, XPathResult.ANY_TYPE, null);
+			var result=nodes.iterateNext();
+			var res = "";
+			while (result)
+			{
+				res = res + result.childNodes[0].nodeValue + "<br>";
+				result=nodes.iterateNext();
+			}
+			document.getElementById('testdata').innerHTML = res;
+		//upto here
+		
         document.getElementById('curDate').innerHTML = d;
        var x = xmlDoc.getElementsByTagName("CurrencyConversionResponse");
        var innerval = "";
@@ -175,7 +146,7 @@ function changeBaseCur() {
 }
 
 function ChooseChartType(button) {
-    chartType = 'column';
+    chartType = 'line';
     //alert(chartType);
    // exchangeDataLoader.generateChart();
 };
