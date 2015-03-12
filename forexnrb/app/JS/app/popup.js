@@ -113,8 +113,8 @@ var exchangeDataLoader = {
 
     generateChart: function (chartData) {
 
-        minRate = Math.min.apply(Math, chartData.map(function (o) { return o.y; })) - 3;
-        maxRate = Math.max.apply(Math, chartData.map(function (o) { return o.y; })) + 2;
+        minRate = Math.round(Math.min.apply(Math, chartData.map(function (o) { return o.y; })) - 3);
+        maxRate = Math.round(Math.max.apply(Math, chartData.map(function (o) { return o.y; })) + 2);
 
        // alert('Min' + minRate + 'Max ' + maxRate);
            var chart = new CanvasJS.Chart("chartContainer", {
