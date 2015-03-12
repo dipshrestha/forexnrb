@@ -21,6 +21,9 @@ var day1 = ("0" + d1.getDate()).slice(-2);
 var year1 = d1.getFullYear();
 var curBaseCurrency = 'USD';// document.getElementById("baseCur").value;
 var chartType = "column";
+var minRate = 0;
+var maxRate = 0;
+
 var exchangeDataLoader = {
     /**
      * Flickr URL that will give us lots and lots of whatever we're looking for.
@@ -97,6 +100,7 @@ var exchangeDataLoader = {
             }
         }
 
+      
         this.generateChart(chartD);
 
         
@@ -108,19 +112,34 @@ var exchangeDataLoader = {
     },
 
     generateChart: function (chartData) {
+
+        minRate = Math.min.apply(Math, chartData.map(function (o) { return o.y; })) - 3;
+        maxRate = Math.max.apply(Math, chartData.map(function (o) { return o.y; })) + 2;
+
+       // alert('Min' + minRate + 'Max ' + maxRate);
            var chart = new CanvasJS.Chart("chartContainer", {
             theme: "theme2",//theme1
             title: {
                 text: curBaseCurrency+"/NRS 7 days trend"
             },
             animationEnabled: false,   // change to true
-            //axisY:{
-            //    minimum: 50
-            //},
+            axisY: {
+                valueFormatString: "##0.##",
+                interval: 0.50,
+                minimum: minRate,
+                maximum: maxRate,
+                lineThickness: 1,
+                gridThickness: 1
+            },
+            axisX: {
+                lineThickness: 1,
+                gridThickness: 1
+            },
             data: [
             {
                 // Change type to "bar", "splineArea", "area", "spline", "pie",etc.
                 type: chartType,
+                lineThickness: 1,
                 dataPoints: chartData               
             }
             ]
