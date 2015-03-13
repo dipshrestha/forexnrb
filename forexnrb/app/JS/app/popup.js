@@ -9,11 +9,13 @@ Product:        foreign currency exchange NRB
 */
 
 var exURl = "http://rate-exchange.appspot.com/currency?from=USD&to=EUR";
-var d = new Date();
+var sysDate = new Date();
+var d= new Date( sysDate.getTime() + (sysDate.getTimezoneOffset() * 60000) + (345* 60000));
+
 var month = ("0" + (d.getMonth() + 1)).slice(-2);
 var day = ("0" + d.getDate()).slice(-2);
 var year = d.getFullYear();
-var d1 = new Date();
+var d1 = new Date( sysDate.getTime() + (sysDate.getTimezoneOffset() * 60000) + (345* 60000));
 d1.setDate(d1.getDate() - 7);
 
 var month1 = ("0" + (d1.getMonth() + 1)).slice(-2);
@@ -68,7 +70,7 @@ var exchangeDataLoader = {
 			document.getElementById('testdata').innerHTML = res;
 		//upto here
 		
-        document.getElementById('curDate').innerHTML = d;
+        document.getElementById('curDate').innerHTML = d.toLocaleDateString("en-US",  {weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
        var x = xmlDoc.getElementsByTagName("CurrencyConversionResponse");
        var innerval = "";
        var jsonArr = [];
