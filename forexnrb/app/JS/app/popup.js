@@ -7,10 +7,6 @@ Author:         Sharad Subedi
 Copyright:      
 Product:        foreign currency exchange NRB
 */
-
-var mytest = "abc";
-
-var exURl = "http://rate-exchange.appspot.com/currency?from=USD&to=EUR";
 var sysDate = new Date();
 var d= new Date( sysDate.getTime() + (sysDate.getTimezoneOffset() * 60000) + (345* 60000));
 
@@ -48,8 +44,7 @@ var exchangeDataLoader = {
      *
      * @public
      */
-    LoadExchangeRate: function () {     
-        var abc = [];
+    LoadExchangeRate: function () {
 		var getExchangeRateUrl = 'http://www.nrb.org.np/exportForexXML.php?YY=' + year1 + '&MM=' + month1 + '&DD=' + day1 + '&YY1=' + year + '&MM1=' + month + '&DD1=' + day + '';
         var req = new XMLHttpRequest();
         req.open("GET", getExchangeRateUrl, true);
@@ -91,20 +86,23 @@ var exchangeDataLoader = {
 			chartD.push({
 				label: new String(ConversionTime),
 				y: parseFloat(rate)
-			})
+			});
             			
 			result=nodes.iterateNext();
 		}
         this.generateChart(chartD);
 
-        result = "";
         document.getElementById("exchangeRate").innerHTML = innerval;
     },
 
     generateChart: function (chartData) {
 
-        minRate = Math.round(Math.min.apply(Math, chartData.map(function (o) { return o.y; })) - 3);
-        maxRate = Math.round(Math.max.apply(Math, chartData.map(function (o) { return o.y; })) + 2);
+        minRate = Math.floor(Math.min.apply(Math, chartData.map(function (o) { return o.y; })));
+        maxRate = Math.ceil(Math.max.apply(Math, chartData.map(function (o) { return o.y; })));
+        if(minRate == maxRate && minRate % 1 === 0) {
+            minRate--;
+            maxRate++;
+        }
 
        // alert('Min' + minRate + 'Max ' + maxRate);
            var chart = new CanvasJS.Chart("chartContainer", {
@@ -140,15 +138,14 @@ var exchangeDataLoader = {
 
 
 function changeBaseCur() {
-    var x = document.getElementById("baseCur").value;
-    curBaseCurrency = x;
+    curBaseCurrency = document.getElementById("baseCur").value;
     exchangeDataLoader.LoadExchangeRate();
-};
+}
 
 function ChooseChartType(hitId) {
     chartType = hitId;
     exchangeDataLoader.generateChart(chartD);
-};
+}
 
 function setFromDate(days){
 	d1 = new Date( sysDate.getTime() + (sysDate.getTimezoneOffset() * 60000) + (345* 60000));
@@ -167,7 +164,7 @@ function setFromDate(days){
 	else
 		trendDays = days+" days";
 	exchangeDataLoader.LoadExchangeRate();
-};
+}
 
 // Run exchangeDataLoader  script as DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
