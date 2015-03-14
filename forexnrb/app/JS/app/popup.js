@@ -26,6 +26,8 @@ var chartType = "column";
 var minRate = 0;
 var maxRate = 0;
 
+var chartD = [];
+
 var exchangeDataLoader = {
     /**
      * Flickr URL that will give us lots and lots of whatever we're looking for.
@@ -74,7 +76,8 @@ var exchangeDataLoader = {
        var x = xmlDoc.getElementsByTagName("CurrencyConversionResponse");
        var innerval = "";
        var jsonArr = [];
-       var chartD = [];
+       //reset chart data veriable
+       chartD = [];
        var todayDate=day+'-'+month+'-'+year;
         for (i = 0; i < x.length; i++) {          
             var ConversionTime = x[i].getElementsByTagName("ConversionTime")[0].childNodes[0].nodeValue;
@@ -93,6 +96,7 @@ var exchangeDataLoader = {
 
             //});
 
+           
             if (from == curBaseCurrency)
             {
                 chartD.push({
@@ -150,24 +154,27 @@ var exchangeDataLoader = {
     }  
 };
 
-// Run exchangeDataLoader  script as DOM is ready.
-document.addEventListener('DOMContentLoaded', function () {
-    exchangeDataLoader.LoadExchangeRate();
-    document.querySelector('#baseCur').addEventListener('change', changeBaseCur);
-    document.querySelector('#hrLine').addEventListener('click', ChooseChartType());
-    document.querySelector('#hrColumn').addEventListener('click', ChooseChartType());
-});
-
-
 
 function changeBaseCur() {
     var x = document.getElementById("baseCur").value;
     curBaseCurrency = x;
     exchangeDataLoader.LoadExchangeRate();
-}
-
-function ChooseChartType(button) {
-    chartType = 'line';
-    //alert(chartType);
-   // exchangeDataLoader.generateChart();
 };
+
+function ChooseChartType(hitId) {
+    chartType = hitId;
+    exchangeDataLoader.generateChart(chartD);
+};
+
+// Run exchangeDataLoader  script as DOM is ready.
+document.addEventListener('DOMContentLoaded', function () {
+    exchangeDataLoader.LoadExchangeRate();
+    document.querySelector('#baseCur').addEventListener('change', changeBaseCur);
+    document.getElementById('line').addEventListener('click', function () {
+        ChooseChartType(this.id);
+    });
+    document.getElementById('column').addEventListener('click', function () {
+        ChooseChartType(this.id);
+    });
+});
+
