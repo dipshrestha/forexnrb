@@ -3,9 +3,9 @@ File:           popup.js
 Version:        1.0
 Last changed:   2015/03/08
 Purpose:        Javascript functions to populate data into popup
-Author:         Sharad Subedi
+Author:         Sharad Subedi, Amit Jain, Dipesh Shrestha
 Copyright:      
-Product:        foreign currency exchange NRB
+Product:        Foreign Currency Exchange NRB
 */
 var sysDate = new Date();
 var d= new Date( sysDate.getTime() + (sysDate.getTimezoneOffset() * 60000) + (345* 60000));
@@ -27,23 +27,7 @@ var maxRate = 0;
 var chartD = [];
 var trendDays = "7 days";
 var exchangeDataLoader = {
-    /**
-     * Flickr URL that will give us lots and lots of whatever we're looking for.
-     *
-     * See http://www.flickr.com/services/api/flickr.photos.search.html for
-     * details about the construction of this URL.
-     *
-     * @type {string}
-     * @private
-     */
-    //getExchangeRateUrl: 'http://rate-exchange.appspot.com/currency?from=USD&to=NPR',
-    //getExchangeRateUrl: 'http://www.nrb.org.np/exportForexXML.php?YY=' + year1 + '&MM=' + month1 + '&DD=' + day1 + '&YY1=' + year + '&MM1=' + month + '&DD1=' + day + '',
-    /**
-     * Sends an XHR GET request to grab photos of lots and lots of kittens. The
-     * XHR's 'onload' event is hooks up to the 'showPhotos_' method.
-     *
-     * @public
-     */
+
     LoadExchangeRate: function () {
 		var getExchangeRateUrl = 'http://www.nrb.org.np/exportForexXML.php?YY=' + year1 + '&MM=' + month1 + '&DD=' + day1 + '&YY1=' + year + '&MM1=' + month + '&DD1=' + day + '';
         var req = new XMLHttpRequest();
@@ -54,14 +38,11 @@ var exchangeDataLoader = {
     },
 
     showGetResponseData: function (respData) {
-        //alert('test');
+
         var xmlDoc = respData.target.responseXML;		
-		//get country specific exchabge rate for given period
-		
-		
 		var todayDate=day+'-'+month+'-'+year;
-		document.getElementById('curDate').innerHTML = d.toLocaleDateString("en-US",  {weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
-		
+		document.getElementById('curDate').innerHTML = sysDate.toLocaleDateString("en-US",{weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
+
 		var intPath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\' and ConversionTime=\'"+todayDate+"\']/ConversionRate";
 		var intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
 		var todayRate = intervalNode.iterateNext().childNodes[0].nodeValue;
@@ -104,8 +85,7 @@ var exchangeDataLoader = {
             maxRate++;
         }
 
-       // alert('Min' + minRate + 'Max ' + maxRate);
-           var chart = new CanvasJS.Chart("chartContainer", {
+        var chart = new CanvasJS.Chart("chartContainer", {
             theme: "theme2",//theme1
             title: {
                 text: curBaseCurrency+"/NRS " + trendDays +" trend"
