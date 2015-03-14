@@ -8,6 +8,8 @@ Copyright:
 Product:        foreign currency exchange NRB
 */
 
+var mytest = "abc";
+
 var exURl = "http://rate-exchange.appspot.com/currency?from=USD&to=EUR";
 var sysDate = new Date();
 var d= new Date( sysDate.getTime() + (sysDate.getTimezoneOffset() * 60000) + (345* 60000));
@@ -22,12 +24,12 @@ var month1 = ("0" + (d1.getMonth() + 1)).slice(-2);
 var day1 = ("0" + d1.getDate()).slice(-2);
 var year1 = d1.getFullYear();
 var curBaseCurrency = 'USD';// document.getElementById("baseCur").value;
-var chartType = "column";
+var chartType = "line";
 var minRate = 0;
 var maxRate = 0;
 
 var chartD = [];
-
+var trendDays = "7 days";
 var exchangeDataLoader = {
     /**
      * Flickr URL that will give us lots and lots of whatever we're looking for.
@@ -39,7 +41,7 @@ var exchangeDataLoader = {
      * @private
      */
     //getExchangeRateUrl: 'http://rate-exchange.appspot.com/currency?from=USD&to=NPR',
-    getExchangeRateUrl: 'http://www.nrb.org.np/exportForexXML.php?YY=' + year1 + '&MM=' + month1 + '&DD=' + day1 + '&YY1=' + year + '&MM1=' + month + '&DD1=' + day + '',
+    //getExchangeRateUrl: 'http://www.nrb.org.np/exportForexXML.php?YY=' + year1 + '&MM=' + month1 + '&DD=' + day1 + '&YY1=' + year + '&MM1=' + month + '&DD1=' + day + '',
     /**
      * Sends an XHR GET request to grab photos of lots and lots of kittens. The
      * XHR's 'onload' event is hooks up to the 'showPhotos_' method.
@@ -47,9 +49,10 @@ var exchangeDataLoader = {
      * @public
      */
     LoadExchangeRate: function () {     
-        var abc = [];       
+        var abc = [];
+		var getExchangeRateUrl = 'http://www.nrb.org.np/exportForexXML.php?YY=' + year1 + '&MM=' + month1 + '&DD=' + day1 + '&YY1=' + year + '&MM1=' + month + '&DD1=' + day + '';
         var req = new XMLHttpRequest();
-        req.open("GET", this.getExchangeRateUrl, true);
+        req.open("GET", getExchangeRateUrl, true);
         req.onload = this.showGetResponseData.bind(this);
               
         req.send(null);     
@@ -57,63 +60,44 @@ var exchangeDataLoader = {
 
     showGetResponseData: function (respData) {
         //alert('test');
-        var xmlDoc = respData.target.responseXML;
-		
+        var xmlDoc = respData.target.responseXML;		
 		//get country specific exchabge rate for given period
-		var path="/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\']/ConversionRate";
-		var nodes=xmlDoc.evaluate(path, xmlDoc, null, XPathResult.ANY_TYPE, null);
-			var result=nodes.iterateNext();
-			var res = "";
-			while (result)
-			{
-				res = res + result.childNodes[0].nodeValue + "<br>";
-				result=nodes.iterateNext();
-			}
-			document.getElementById('testdata').innerHTML = res;
-		//upto here
 		
-        document.getElementById('curDate').innerHTML = d.toLocaleDateString("en-US",  {weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
-       var x = xmlDoc.getElementsByTagName("CurrencyConversionResponse");
-       var innerval = "";
-       var jsonArr = [];
-       //reset chart data veriable
-       chartD = [];
-       var todayDate=day+'-'+month+'-'+year;
-        for (i = 0; i < x.length; i++) {          
-            var ConversionTime = x[i].getElementsByTagName("ConversionTime")[0].childNodes[0].nodeValue;
+		
+		var todayDate=day+'-'+month+'-'+year;
+		document.getElementById('curDate').innerHTML = d.toLocaleDateString("en-US",  {weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
+		
+		var intPath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\' and ConversionTime=\'"+todayDate+"\']/ConversionRate";
+		var intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+		var todayRate = intervalNode.iterateNext().childNodes[0].nodeValue;
+		var innerval = "";
+        innerval = innerval + "<div> Today's exchange rate 1&nbsp;&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;&nbsp;"+"NRS"+"</div>";        
+		
+		var ratepath="/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\']";
+		var nodes=xmlDoc.evaluate(ratepath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+		var result=nodes.iterateNext();		
+		chartD = [];		
+		while (result)
+		{
+			/*res = res + result.getElementsByTagName("BaseCurrency")[0].childNodes[0].nodeValue + " ";
+			result=nodes.iterateNext();
+			count++;*/
+			var ConversionTime = result.getElementsByTagName("ConversionTime")[0].childNodes[0].nodeValue;
 
-            var from = x[i].getElementsByTagName("BaseCurrency")[0].childNodes[0].nodeValue;
-            var to = x[i].getElementsByTagName("TargetCurrency")[0].childNodes[0].nodeValue;
-            var rate = x[i].getElementsByTagName("ConversionRate")[0].childNodes[0].nodeValue;
-           // alert(curBaseCurrency);
-            if (ConversionTime == todayDate && from == curBaseCurrency) {
-                innerval = innerval + "<div> Today's exchange rate 1&nbsp;&nbsp;" + from + " = " + rate + "&nbsp;&nbsp;"+to+"</div>";
-            }
-            //jsonArr.push({
-            //    TargetCurrency: from,
-            //    ConversionRate: parseFloat(rate),
-            //    ConversionTime: ConversionTime
-
-            //});
-
-           
-            if (from == curBaseCurrency)
-            {
-                chartD.push({
-                    label: new String(ConversionTime),
-                    y: parseFloat(rate)
-                })
-            }
-        }
-
-      
+            //var from = result.getElementsByTagName("BaseCurrency")[0].childNodes[0].nodeValue;
+            //var to = result.getElementsByTagName("TargetCurrency")[0].childNodes[0].nodeValue;
+            var rate = result.getElementsByTagName("ConversionRate")[0].childNodes[0].nodeValue;
+            
+			chartD.push({
+				label: new String(ConversionTime),
+				y: parseFloat(rate)
+			})
+            			
+			result=nodes.iterateNext();
+		}
         this.generateChart(chartD);
 
-        
-
         result = "";
-       // result += jsonPath(jsonData, $.CurrencyConversion.CurrencyConversionResponse[*].ConversionTime).toJSONString());
-       // alert(result);
         document.getElementById("exchangeRate").innerHTML = innerval;
     },
 
@@ -126,7 +110,7 @@ var exchangeDataLoader = {
            var chart = new CanvasJS.Chart("chartContainer", {
             theme: "theme2",//theme1
             title: {
-                text: curBaseCurrency+"/NRS 7 days trend"
+                text: curBaseCurrency+"/NRS " + trendDays +" trend"
             },
             animationEnabled: false,   // change to true
             axisY: {
@@ -145,7 +129,7 @@ var exchangeDataLoader = {
             {
                 // Change type to "bar", "splineArea", "area", "spline", "pie",etc.
                 type: chartType,
-                lineThickness: 1,
+                lineThickness: 2,
                 dataPoints: chartData               
             }
             ]
@@ -166,6 +150,25 @@ function ChooseChartType(hitId) {
     exchangeDataLoader.generateChart(chartD);
 };
 
+function setFromDate(days){
+	d1 = new Date( sysDate.getTime() + (sysDate.getTimezoneOffset() * 60000) + (345* 60000));
+	d1.setDate(d1.getDate() - days);
+
+	month1 = ("0" + (d1.getMonth() + 1)).slice(-2);
+	day1 = ("0" + d1.getDate()).slice(-2);
+	year1 = d1.getFullYear();
+	mytest = "asd";
+	if(days==91)
+		trendDays = "3 months";
+	else if(days==182)
+		trendDays = "6 months";
+	else if(days==365)
+		trendDays = "1 year";
+	else
+		trendDays = days+" days";
+	exchangeDataLoader.LoadExchangeRate();
+};
+
 // Run exchangeDataLoader  script as DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
     exchangeDataLoader.LoadExchangeRate();
@@ -175,6 +178,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     document.getElementById('column').addEventListener('click', function () {
         ChooseChartType(this.id);
+    });
+	document.getElementById('seven').addEventListener('click', function () {
+        setFromDate(7);		
+    });
+	document.getElementById('fifteen').addEventListener('click', function () {
+        setFromDate(15);
+    });
+	document.getElementById('thirty').addEventListener('click', function () {
+        setFromDate(30);
+    });
+	document.getElementById('sixty').addEventListener('click', function () {
+        setFromDate(60);
+    });
+	document.getElementById('three').addEventListener('click', function () {
+        setFromDate(91);
+    });
+	document.getElementById('six').addEventListener('click', function () {
+        setFromDate(182);
+    });
+	document.getElementById('one').addEventListener('click', function () {
+        setFromDate(365);
     });
 });
 
