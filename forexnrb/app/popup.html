@@ -1,7 +1,7 @@
 <!doctype html>
-<html ng-app="" ng-csp>
+<html>
 <head>
-    <title>Foreign Currency Exchange Rate- Nepal Rastra Bank</title>
+    <title>Foreign Currency Exchange Rate-Nepal Rastra Bank</title>
     <style>
         body {
             min-width: 357px;
@@ -17,15 +17,8 @@
         }
     </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
-     -->
     <script src="JS/app/popup.js"></script>
-    <script src="JS/lib/angular.min.js"></script>
     <script src="JS/lib/canvasjs.min.js"></script>
-    <script src="JS/lib/jquery-1.2.6.js"></script>
     <script src="JS/lib/jquery.xml2json.js"></script>
 
 </head>
@@ -55,7 +48,6 @@
             <option>KPW</option>
         </select>
     </div>
-    <!--<div id="header"> <b>Base Currency</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Exchange Rate</b> </div>-->
     <br />
     <div id="exchangeRate">
 
@@ -68,7 +60,7 @@
 				<a href="#" id="thirty">30 days</a> | 
 				<a href="#" id="sixty" >60 days</a> | 
 				<a href="#" id="three">3 months</a> |
-				<a href="#" id="six" >6 mothhs</a> |
+				<a href="#" id="six" >6 months</a> |
 				<a href="#" id="one" >1 year</a>
 			</div>
 			<div style="clear:both;"></div>
@@ -77,7 +69,7 @@
 				<a id="column" href="#">Column</a>
 			</div>		
 			<div style="clear:both;"></div>
-			</div>
     </div>
+
 </body>
 </html>
