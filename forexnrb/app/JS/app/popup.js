@@ -4,7 +4,6 @@ Version:        1.0
 Last changed:   2015/03/08
 Purpose:        Javascript functions to populate data into popup
 Author:         Sharad Subedi, Amit Jain, Dipesh Shrestha
-Copyright:      
 Product:        Foreign Currency Exchange NRB
 */
 var sysDate = new Date();
@@ -30,10 +29,6 @@ if(localStorage.chartType !== undefined & localStorage.chartType != "") {
     chartType = localStorage.chartType;
 }
 
-var minRate = 0;
-var maxRate = 0;
-
-var chartD = [];
 var trendDays = "7 days";
 if(localStorage.trendDays !== undefined & localStorage.trendDays != "") {
     trendDays = localStorage.trendDays;
@@ -46,7 +41,6 @@ var exchangeDataLoader = {
         var req = new XMLHttpRequest();
         req.open("GET", getExchangeRateUrl, true);
         req.onload = this.showGetResponseData.bind(this);
-              
         req.send(null);     
     },
 
@@ -54,27 +48,16 @@ var exchangeDataLoader = {
 
         var xmlDoc = respData.target.responseXML;		
 		var todayDate=day+'-'+month+'-'+year;
-		document.getElementById('curDate').innerHTML = sysDate.toLocaleDateString("en-US",{weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
-
 		var intPath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\' and ConversionTime=\'"+todayDate+"\']/ConversionRate";
 		var intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
 		var todayRate = intervalNode.iterateNext().childNodes[0].nodeValue;
-		var innerval = "";
-        innerval = innerval + "<div> Today's exchange rate 1&nbsp;&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;&nbsp;"+"NRS"+"</div>";        
-		
 		var ratepath="/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\']";
 		var nodes=xmlDoc.evaluate(ratepath, xmlDoc, null, XPathResult.ANY_TYPE, null);
 		var result=nodes.iterateNext();		
-		chartD = [];		
+		var chartD = [];
 		while (result)
 		{
-			/*res = res + result.getElementsByTagName("BaseCurrency")[0].childNodes[0].nodeValue + " ";
-			result=nodes.iterateNext();
-			count++;*/
 			var ConversionTime = result.getElementsByTagName("ConversionTime")[0].childNodes[0].nodeValue;
-
-            //var from = result.getElementsByTagName("BaseCurrency")[0].childNodes[0].nodeValue;
-            //var to = result.getElementsByTagName("TargetCurrency")[0].childNodes[0].nodeValue;
             var rate = result.getElementsByTagName("ConversionRate")[0].childNodes[0].nodeValue;
             
 			chartD.push({
@@ -84,26 +67,27 @@ var exchangeDataLoader = {
             			
 			result=nodes.iterateNext();
 		}
-        this.generateChart(chartD);
 
+        this.generateChart(chartD);
+        var innerval = "<div> Today's exchange rate 1&nbsp;&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;&nbsp;"+"NRS"+"</div>";
         document.getElementById("exchangeRate").innerHTML = innerval;
+        document.getElementById('curDate').innerHTML = sysDate.toLocaleDateString("en-US",{weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
     },
 
     generateChart: function (chartData) {
-
-        minRate = Math.floor(Math.min.apply(Math, chartData.map(function (o) { return o.y; })));
-        maxRate = Math.ceil(Math.max.apply(Math, chartData.map(function (o) { return o.y; })));
+        var minRate = Math.floor(Math.min.apply(Math, chartData.map(function (o) { return o.y; })));
+        var maxRate = Math.ceil(Math.max.apply(Math, chartData.map(function (o) { return o.y; })));
         if(minRate == maxRate && minRate % 1 === 0) {
             minRate--;
             maxRate++;
         }
 
         var chart = new CanvasJS.Chart("chartContainer", {
-            theme: "theme2",//theme1
+            theme: "theme2",
             title: {
                 text: curBaseCurrency+"/NRS " + trendDays +" trend"
             },
-            animationEnabled: false,   // change to true
+            animationEnabled: false,
             axisY: {
                 valueFormatString: "##0.##",
                 interval: 0.50,
@@ -118,7 +102,6 @@ var exchangeDataLoader = {
             },
             data: [
             {
-                // Change type to "bar", "splineArea", "area", "spline", "pie",etc.
                 type: chartType,
                 lineThickness: 2,
                 dataPoints: chartData               
@@ -128,7 +111,6 @@ var exchangeDataLoader = {
         chart.render();
     }  
 };
-
 
 function loadBaseCru() {
     var dd = document.getElementById('baseCur');
@@ -159,7 +141,6 @@ function setFromDate(days){
 	month1 = ("0" + (d1.getMonth() + 1)).slice(-2);
 	day1 = ("0" + d1.getDate()).slice(-2);
 	year1 = d1.getFullYear();
-	mytest = "asd";
 	if(days==91)
 		trendDays = "3 months";
 	else if(days==182)
