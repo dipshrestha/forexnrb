@@ -19,13 +19,26 @@ d1.setDate(d1.getDate() - 7);
 var month1 = ("0" + (d1.getMonth() + 1)).slice(-2);
 var day1 = ("0" + d1.getDate()).slice(-2);
 var year1 = d1.getFullYear();
-var curBaseCurrency = 'USD';// document.getElementById("baseCur").value;
+
+var curBaseCurrency = "USD";
+if(localStorage.curBaseCurrency !== undefined & localStorage.curBaseCurrency != "") {
+    curBaseCurrency = localStorage.curBaseCurrency;
+}
+
 var chartType = "line";
+if(localStorage.chartType !== undefined & localStorage.chartType != "") {
+    chartType = localStorage.chartType;
+}
+
 var minRate = 0;
 var maxRate = 0;
 
 var chartD = [];
 var trendDays = "7 days";
+if(localStorage.trendDays !== undefined & localStorage.trendDays != "") {
+    trendDays = localStorage.trendDays;
+}
+
 var exchangeDataLoader = {
 
     LoadExchangeRate: function () {
@@ -117,13 +130,25 @@ var exchangeDataLoader = {
 };
 
 
+function loadBaseCru() {
+    var dd = document.getElementById('baseCur');
+    for (var i = 0; i < dd.options.length; i++) {
+        if (dd.options[i].text === curBaseCurrency) {
+            dd.selectedIndex = i;
+            break;
+        }
+    }
+}
+
 function changeBaseCur() {
     curBaseCurrency = document.getElementById("baseCur").value;
+    localStorage.curBaseCurrency = curBaseCurrency;
     exchangeDataLoader.LoadExchangeRate();
 }
 
 function ChooseChartType(hitId) {
     chartType = hitId;
+    localStorage.chartType = chartType;
     exchangeDataLoader.generateChart(chartD);
 }
 
@@ -143,11 +168,13 @@ function setFromDate(days){
 		trendDays = "1 year";
 	else
 		trendDays = days+" days";
+    localStorage.trendDays = trendDays;
 	exchangeDataLoader.LoadExchangeRate();
 }
 
 // Run exchangeDataLoader  script as DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
+    loadBaseCru();
     exchangeDataLoader.LoadExchangeRate();
     document.querySelector('#baseCur').addEventListener('change', changeBaseCur);
     document.getElementById('line').addEventListener('click', function () {
