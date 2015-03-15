@@ -19,6 +19,7 @@ var month1 = ("0" + (d1.getMonth() + 1)).slice(-2);
 var day1 = ("0" + d1.getDate()).slice(-2);
 var year1 = d1.getFullYear();
 
+var chartD = [];
 var curBaseCurrency = "USD";
 if(localStorage.curBaseCurrency !== undefined & localStorage.curBaseCurrency != "") {
     curBaseCurrency = localStorage.curBaseCurrency;
@@ -54,7 +55,7 @@ var exchangeDataLoader = {
 		var ratepath="/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\']";
 		var nodes=xmlDoc.evaluate(ratepath, xmlDoc, null, XPathResult.ANY_TYPE, null);
 		var result=nodes.iterateNext();		
-		var chartD = [];
+		chartD = [];
 		while (result)
 		{
 			var ConversionTime = result.getElementsByTagName("ConversionTime")[0].childNodes[0].nodeValue;
