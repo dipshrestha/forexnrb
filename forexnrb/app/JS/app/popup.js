@@ -70,7 +70,7 @@ var exchangeDataLoader = {
 		}
 
         this.generateChart(chartD);
-        var innerval = "<div> Today's exchange rate 1&nbsp;&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;&nbsp;"+"NRS"+"</div>";
+        var innerval = "<div class=\"exchange-rate\"> Today's exchange rate 1&nbsp;&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;&nbsp;"+"NRS"+"</div>";
         document.getElementById("exchangeRate").innerHTML = innerval;
         document.getElementById('curDate').innerHTML = sysDate.toLocaleDateString("en-US",{weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
     },
@@ -86,7 +86,10 @@ var exchangeDataLoader = {
         var chart = new CanvasJS.Chart("chartContainer", {
             theme: "theme2",
             title: {
-                text: curBaseCurrency+"/NRS " + trendDays +" trend"
+                text: curBaseCurrency+"/NRS " + trendDays +" trend",
+				fontFamily: "Helvetica Neue,Helvetica,Arial,sans-serif",
+				fontWeight: "bold",
+				fontColor: "#CCCC99"
             },
             animationEnabled: false,
             axisY: {

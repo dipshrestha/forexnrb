@@ -19,12 +19,13 @@
 
     <script src="JS/app/popup.js"></script>
     <script src="JS/lib/canvasjs.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
 
 </head>
 
 <body>
-    <label for="url" style="font-weight: bold; font-size: medium">Foreign Currency Exchange Rate, NRB</label><br />
-    <div id="curDate" style="font-weight:bold"></div><br />
+    <label for="url" class="title">Foreign Currency Exchange Rate, NRB</label><br />
+    <div id="curDate"></div><br />
     <div>
 
         <label for="url" style="font-weight:bold">Base Currency:</label>
@@ -52,22 +53,20 @@
 
     </div>
     <div>
+		<div class="chart-type">          
+			<a id="line" href="#">Line</a> |
+			<a id="column" href="#">Column</a>
+		</div>
         <div id="chartContainer" style="float:left;height: 200px; width: 100%;" ></div>
-			<div style="float:left">Period<br/>
-				<a href="#" id="seven">7 days</a> | 
-				<a href="#" id="fifteen">15 days</a> | 
-				<a href="#" id="thirty">30 days</a> | 
-				<a href="#" id="sixty" >60 days</a> | 
-				<a href="#" id="three">3 months</a> |
-				<a href="#" id="six" >6 months</a> |
-				<a href="#" id="one" >1 year</a>
-			</div>
-			<div style="clear:both;"></div>
-			<div style="float:left; font-weight:bold"> Chart type <br/>           
-				<a  id="line" href="#">Line</a>|
-				<a id="column" href="#">Column</a>
-			</div>		
-			<div style="clear:both;"></div>
+		<div class="chart-period">Period<br/>
+			<a href="#" id="seven">7 days</a> | 
+			<a href="#" id="fifteen">15 days</a> | 
+			<a href="#" id="thirty">30 days</a> | 
+			<a href="#" id="sixty" >60 days</a> | 
+			<a href="#" id="three">3 months</a> |
+			<a href="#" id="six" >6 months</a> |
+			<a href="#" id="one" >1 year</a>
+		</div>			
     </div>
 
 </body>

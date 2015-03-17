@@ -1,0 +1,25 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #CCC;
+}
+.exchange-rate{
+	font-style: italic;
+}
+.trend{
+	float:left;
+	}
+.chart-type{
+	float:right; font-weight:bold;
+	}
+#curDate{
+	font-weight:bold; color: floralwhite;
+}
+.title{
+	font-weight: bold; font-size: medium; color: floralwhite;
+	}
+#chartContainer{
+	float:left;	height: 200px; 	width: 100%;
+}
+.chart-period{
+	float:left;margin: 5px 0;
+	}
