@@ -38,14 +38,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app\angular.min.js" />
-    <Content Include="app\canvasjs.min.js" />
+    <Content Include="app\JS\app\background.js" />
+    <Content Include="app\JS\lib\angular.min.js" />
+    <Content Include="app\JS\lib\canvasjs.min.js" />
     <Content Include="app\img\icon.png" />
     <Content Include="app\img\icon1.png" />
-    <Content Include="app\jquery-1.2.6.js" />
-    <Content Include="app\jquery.xml2json.js" />
+    <Content Include="app\JS\lib\jquery-1.2.6.js" />
+    <Content Include="app\JS\lib\jquery.xml2json.js" />
     <Content Include="app\popup.html" />
-    <Content Include="app\popup.js" />
+    <Content Include="app\JS\app\popup.js" />
     <Content Include="Properties\build\lib\Ionic.Zip.DLL" />
     <Content Include="Properties\build\lib\MSBuild.ExtensionPack.dll" />
     <Content Include="response.xml" />
