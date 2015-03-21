@@ -24,49 +24,49 @@
 </head>
 
 <body>
-    <label for="url" class="title">Foreign Currency Exchange Rate, NRB</label><br />
+    <div class="title">Foreign Currency Exchange Rate, NRB</div>
     <div id="curDate"></div><br />
     <div>
 
-        <label for="url" style="font-weight:bold">Base Currency:</label>
+        <label for="baseCur" class="currency">Currency</label>
         <select id="baseCur">
             <option>USD</option>
-            <option>INR</option>
+            <option>KPW</option>
+            <option>JPY</option>
+            <option>QAR</option>
+            <option>AUD</option>
             <option>EUR</option>
             <option>GBP</option>
-            <option>CHF</option>
-            <option>AUD</option>
             <option>CAD</option>
             <option>SGD</option>
-            <option>JPY</option>
-            <option>CNH</option>
             <option>SAR</option>
-            <option>QAR</option>
+            <option>CNH</option>
             <option>THB</option>
             <option>AED</option>
             <option>MYR</option>
-            <option>KPW</option>
+            <option>CHF</option>
+            <option>INR</option>
         </select>
+        <span id="exchangeRate"/>
     </div>
     <br />
-    <div id="exchangeRate">
 
-    </div>
     <div>
-		<div class="chart-type">          
-			<a id="line" href="#">Line</a> |
-			<a id="column" href="#">Column</a>
-		</div>
+
         <div id="chartContainer" style="float:left;height: 200px; width: 100%;" ></div>
-		<div class="chart-period">Period<br/>
-			<a href="#" id="seven">7 days</a> | 
-			<a href="#" id="fifteen">15 days</a> | 
-			<a href="#" id="thirty">30 days</a> | 
-			<a href="#" id="sixty" >60 days</a> | 
-			<a href="#" id="three">3 months</a> |
-			<a href="#" id="six" >6 months</a> |
-			<a href="#" id="one" >1 year</a>
-		</div>			
+		<div class="chart-period">
+			<a href="#" id="seven">7day</a> |
+			<a href="#" id="fifteen">15day</a> |
+			<a href="#" id="thirty">30day</a> |
+			<a href="#" id="sixty" >60day</a> |
+			<a href="#" id="three">3mth</a> |
+			<a href="#" id="six" >6mth</a> |
+			<a href="#" id="one" >1yr</a>
+		</div>
+        <div class="chart-type">
+            <a id="line" href="#">Line</a> |
+            <a id="column" href="#">Column</a>
+        </div>
     </div>
 
 </body>

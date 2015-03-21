@@ -6,6 +6,7 @@ Purpose:        Javascript functions to populate data into popup
 Author:         Sharad Subedi, Amit Jain, Dipesh Shrestha
 Product:        Foreign Currency Exchange NRB
 */
+
 var sysDate = new Date();
 var d= new Date( sysDate.getTime() + (sysDate.getTimezoneOffset() * 60000) + (345* 60000));
 
@@ -25,7 +26,7 @@ if(localStorage.curBaseCurrency !== undefined & localStorage.curBaseCurrency != 
     curBaseCurrency = localStorage.curBaseCurrency;
 }
 
-var chartType = "line";
+var chartType = "column";
 if(localStorage.chartType !== undefined & localStorage.chartType != "") {
     chartType = localStorage.chartType;
 }
@@ -70,7 +71,7 @@ var exchangeDataLoader = {
 		}
 
         this.generateChart(chartD);
-        var innerval = "<div class=\"exchange-rate\"> Today's exchange rate 1&nbsp;&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;&nbsp;"+"NRS"+"</div>";
+        var innerval = "Today's exchange rate 1&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;"+"NRS";
         document.getElementById("exchangeRate").innerHTML = innerval;
         document.getElementById('curDate').innerHTML = sysDate.toLocaleDateString("en-US",{weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
     },

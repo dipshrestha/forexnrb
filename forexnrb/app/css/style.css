@@ -1,25 +1,51 @@
 body{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	background-color: #CCC;
 }
-.exchange-rate{
+
+a {
+	color: rgb(79, 129, 188);
+}
+
+select
+{
+	border: 1px solid #000;
+	color: #fff;
+	background: #daa20a;
+	background: #444;
+	padding: 5px;
+}
+
+
+.currency{
+	font-weight: bold;
 	font-style: italic;
+	color: #daa20a;
 }
+
 .trend{
 	float:left;
 	}
+
 .chart-type{
-	float:right; font-weight:bold;
-	}
-#curDate{
-	font-weight:bold; color: floralwhite;
+	float:right;
+	margin: 5px 0;
 }
+
+#curDate, .title{
+	font-weight:bold;
+	text-align: center;
+	color: rgb(192, 80, 78);
+}
+
 .title{
-	font-weight: bold; font-size: medium; color: floralwhite;
-	}
+	font-weight: bold; font-size: medium;
+}
+
 #chartContainer{
 	float:left;	height: 200px; 	width: 100%;
+	border: solid black 1px;
 }
+
 .chart-period{
 	float:left;margin: 5px 0;
-	}
+}
