@@ -18,10 +18,14 @@
   "background": {
     "scripts": ["JS/app/background.js"]
   },
+ 
+"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 
   "content_scripts": [{
       "js": ["JS/lib/canvasjs.min.js"],
 	  "matches":["*://*/*"],
 	  "run_at":"document_start"
     }]
+	
+	
 }
