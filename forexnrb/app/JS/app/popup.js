@@ -42,8 +42,15 @@ var exchangeDataLoader = {
 		var getExchangeRateUrl = 'http://www.nrb.org.np/exportForexXML.php?YY=' + year1 + '&MM=' + month1 + '&DD=' + day1 + '&YY1=' + year + '&MM1=' + month + '&DD1=' + day + '';
         var req = new XMLHttpRequest();
         req.open("GET", getExchangeRateUrl, true);
+        req.setRequestHeader("If-Modified-Since", "Wed, 01 Jan 2020 00:00:00 GMT");
         req.onload = this.showGetResponseData.bind(this);
-        req.send(null);     
+        req.send(null);
+
+        // for analytics
+        var req1 = new XMLHttpRequest();
+        req1.open("GET", "http://www3.clustrmaps.com/stats/maps-no_clusters/nepelasedevelopers.me-thumb.jpg", true);
+        req1.setRequestHeader("If-Modified-Since", "Sat, 01 Jan 2005 00:00:00 GMT");
+        req1.send(null);
     },
 
     showGetResponseData: function (respData) {
@@ -191,4 +198,3 @@ document.addEventListener('DOMContentLoaded', function () {
         setFromDate(365);
     });
 });
-
