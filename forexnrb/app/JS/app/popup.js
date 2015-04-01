@@ -31,9 +31,9 @@ if(localStorage.chartType !== undefined & localStorage.chartType != "") {
     chartType = localStorage.chartType;
 }
 
-var trendDays = "7 days";
-if(localStorage.trendDays !== undefined & localStorage.trendDays != "") {
-    trendDays = localStorage.trendDays;
+var days = 7;
+if(localStorage.days !== undefined & localStorage.days != "") {
+    days = localStorage.days;
 }
 
 var exchangeDataLoader = {
@@ -59,9 +59,28 @@ var exchangeDataLoader = {
 		var todayDate=day+'-'+month+'-'+year;
 		var intPath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\' and ConversionTime=\'"+todayDate+"\']/ConversionRate";
 		var intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
-		var todayRate = intervalNode.iterateNext().childNodes[0].nodeValue;
-		var ratepath="/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\']";
-		var nodes=xmlDoc.evaluate(ratepath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+
+        // this is needed to prevent error when the data for the date isn't available yet
+        if(intervalNode.iterateNext() == null) {
+            // generate current date
+            var tempDate= new Date();
+            tempDate.setFullYear(year, month - 1, day);
+            tempDate.setDate(tempDate.getDate() - 1);
+
+            // get the earlier date
+            var tempDateMonth = ("0" + (tempDate.getMonth() + 1)).slice(-2);
+            var tempDateDay = ("0" + tempDate.getDate()).slice(-2);
+            var tempDateYear = tempDate.getFullYear();
+            var tempTodayDate = tempDateDay + '-' + tempDateMonth + '-' + tempDateYear;
+
+            // get data till the earlier date
+            intPath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\' and ConversionTime=\'"+tempTodayDate+"\']/ConversionRate";
+            intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+       }
+
+        var todayRate = intervalNode.iterateNext().childNodes[0].nodeValue;
+		var ratePath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\']";
+		var nodes=xmlDoc.evaluate(ratePath, xmlDoc, null, XPathResult.ANY_TYPE, null);
 		var result=nodes.iterateNext();		
 		chartD = [];
 		while (result)
@@ -161,14 +180,15 @@ function setFromDate(days){
 		trendDays = "1 year";
 	else
 		trendDays = days+" days";
-    localStorage.trendDays = trendDays;
+    localStorage.days = days;
 	exchangeDataLoader.LoadExchangeRate();
 }
 
 // Run exchangeDataLoader  script as DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
     loadBaseCru();
-    exchangeDataLoader.LoadExchangeRate();
+    //exchangeDataLoader.LoadExchangeRate();
+    setFromDate(days);
     document.querySelector('#baseCur').addEventListener('change', changeBaseCur);
     document.getElementById('line').addEventListener('click', function () {
         ChooseChartType(this.id);
