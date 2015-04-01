@@ -4,9 +4,9 @@
   "name": "Foreign Currency Exchange Rate - NRB",
   "short_name": "Forex - NRB",
   "description": "Foreign Currency Exchange Rate - Nepal Rastra Bank.",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
-  "permissions": ["http://www.nrb.org.np//*/", "http://www3.clustrmaps.com/", "notifications"],
+  "permissions": ["http://www.nrb.org.np//*/", "http://www3.clustrmaps.com/"],
   "icons": {
 		"128": "img/icon_large.png"
 	},
@@ -14,15 +14,9 @@
     "default_icon": "img/icon.png",
     "default_popup": "popup.html"
   },
-  
+
   "background": {
     "scripts": ["JS/app/background.js"]
-  },
-  "content_scripts": [{
-      "js": ["JS/lib/canvasjs.min.js"],
-	  "matches":["*://*/*"],
-	  "run_at":"document_start"
-    }]
-	
-	
+  }
+
 }
