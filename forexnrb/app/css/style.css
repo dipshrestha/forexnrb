@@ -48,3 +48,9 @@ select
 .chart-period{
 	float:left;margin: 5px 0;
 }
+
+.error {
+	font-size: 15px;
+	color: red;
+	display: none;
+}

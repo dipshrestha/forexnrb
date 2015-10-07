@@ -42,6 +42,17 @@ var exchangeDataLoader = {
 		var getExchangeRateUrl = 'http://www.nrb.org.np/exportForexXML.php?YY=' + year1 + '&MM=' + month1 + '&DD=' + day1 + '&YY1=' + year + '&MM1=' + month + '&DD1=' + day + '';
         var req = new XMLHttpRequest();
         req.open("GET", getExchangeRateUrl, true);
+
+        req.onreadystatechange = function (oEvent) {
+            if (req.readyState === 4) {
+                if (req.status === 200) {
+                    // do nothing
+                } else {
+                    document.getElementById("errorPlaceholder").style.display = "block";
+                }
+            }
+        };
+
         req.setRequestHeader("If-Modified-Since", "Wed, 01 Jan 2020 00:00:00 GMT");
         req.onload = this.showGetResponseData.bind(this);
         req.send(null);
@@ -61,7 +72,7 @@ var exchangeDataLoader = {
 		var intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
 
         // this is needed to prevent error when the data for the date isn't available yet
-        if(intervalNode.iterateNext() == null) {
+        //if(intervalNode.iterateNext() == null) {
             // generate current date
             var tempDate= new Date();
             tempDate.setFullYear(year, month - 1, day);
@@ -76,7 +87,7 @@ var exchangeDataLoader = {
             // get data till the earlier date
             intPath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\' and ConversionTime=\'"+tempTodayDate+"\']/ConversionRate";
             intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
-       }
+       //}
 
         var todayRate = intervalNode.iterateNext().childNodes[0].nodeValue;
 		var ratePath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\']";
@@ -140,7 +151,11 @@ var exchangeDataLoader = {
             ]
         });
         chart.render();
-    }  
+    },
+
+    showError: function () {
+      }
+
 };
 
 function loadBaseCru() {
