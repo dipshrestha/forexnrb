@@ -1,5 +1,7 @@
 body{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	min-width: 400px;
+    overflow-x: hidden;
 }
 
 a {
@@ -23,7 +25,7 @@ select
 
 .trend{
 	float:left;
-	}
+}
 
 .chart-type{
 	float:right;
@@ -40,11 +42,6 @@ select
 	font-weight: bold; font-size: medium;
 }
 
-#chartContainer{
-	float:left;	height: 200px; 	width: 100%;
-	border: solid black 1px;
-}
-
 .chart-period{
 	float:left;margin: 5px 0;
 }
@@ -52,5 +49,33 @@ select
 .error {
 	font-size: 15px;
 	color: red;
-	display: none;
+	position: relative;
+	margin-top:-35px;
+	margin-left: 85px;
+}
+
+.chart {
+	height: 200px;
+}
+
+.loading {
+	/*
+	position: relative;
+	margin-top: -100px;
+	width:100%;*/
+
+	width: 100px;
+    height: auto;
+    margin-top: -110px;
+    margin-left: 85px;
+    position: relative;
+}
+
+.hidden {
+	visibility:hidden;
+}
+
+#mainContainer {
+	height: 200px;
+	border: solid black 1px;
 }

@@ -2,24 +2,9 @@
 <html>
 <head>
     <title>Foreign Currency Exchange Rate-Nepal Rastra Bank</title>
-    <style>
-        body {
-            min-width: 357px;
-            overflow-x: hidden;
-        }
-
-        img {
-            margin: 5px;
-            border: 2px solid black;
-            vertical-align: middle;
-            width: 75px;
-            height: 75px;
-        }
-    </style>
-
     <script src="JS/app/popup.js"></script>
     <script src="JS/lib/canvasjs.min.js"></script>
-	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 
 </head>
 
@@ -52,21 +37,25 @@
     <br />
 
     <div>
-
-        <div id="chartContainer" style="float:left;height: 200px; width: 100%;" >
-            <div id="errorPlaceholder" class="error">
-                Error Fetching Data from NRB!\nPlease try again.
+        <div id="mainContainer">
+            <div id="chartPlaceholder" class="chart">
+            </div>
+            <div id="loadingPlaceholder" class="loading hidden"> 
+                <img src='./img/loading.gif' />
+            </div>
+            <div id="errorPlaceholder" class="error hidden">
+                Error Fetching Data from NRB!</br>Please try again.
             </div>
         </div>
-		<div class="chart-period">
-			<a href="#" id="seven">7day</a> |
-			<a href="#" id="fifteen">15day</a> |
-			<a href="#" id="thirty">30day</a> |
-			<a href="#" id="sixty" >60day</a> |
-			<a href="#" id="three">3mth</a> |
-			<a href="#" id="six" >6mth</a> |
-			<a href="#" id="one" >1yr</a>
-		</div>
+        <div class="chart-period">
+            <a href="#" id="seven">7day</a> |
+            <a href="#" id="fifteen">15day</a> |
+            <a href="#" id="thirty">30day</a> |
+            <a href="#" id="sixty" >60day</a> |
+            <a href="#" id="three">3mth</a> |
+            <a href="#" id="six" >6mth</a> |
+            <a href="#" id="one" >1yr</a>
+        </div>
         <div class="chart-type">
             <a id="line" href="#">Line</a> |
             <a id="column" href="#">Column</a>
