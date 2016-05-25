@@ -1,0 +1,2978 @@
+<CurrencyConversion>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>106.29</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>120.78</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>152.86</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>110.34</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>81.60</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>82.07</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>78.94</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>9.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>16.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>28.34</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>29.19</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>3.02</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>28.94</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>27.23</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-04-2016</ConversionTime>
+        <ConversionRate>9.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>106.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>121.22</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>152.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>110.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>81.67</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>81.72</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>78.85</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>9.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>16.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>28.35</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>29.19</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>3.03</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>28.94</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>27.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>02-04-2016</ConversionTime>
+        <ConversionRate>9.25</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>106.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>121.22</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>152.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>110.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>81.67</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>81.72</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>78.85</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>9.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>16.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>28.35</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>29.19</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>3.03</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>28.94</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>27.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>03-04-2016</ConversionTime>
+        <ConversionRate>9.25</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>106.32</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>121.10</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>151.30</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>111.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>81.55</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>81.75</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>78.71</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>9.52</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>16.41</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>28.35</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>29.20</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>3.02</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>28.95</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>27.32</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>04-04-2016</ConversionTime>
+        <ConversionRate>9.26</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>106.17</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>120.66</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>150.90</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>110.49</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>80.94</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>81.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>78.48</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>9.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>16.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>28.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>29.16</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>3.01</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>28.90</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>27.18</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>05-04-2016</ConversionTime>
+        <ConversionRate>9.23</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>106.60</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>121.16</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>151.64</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>111.14</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>80.60</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>81.26</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>78.54</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>9.65</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>16.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>28.42</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>29.27</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>3.02</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>29.02</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>27.16</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>06-04-2016</ConversionTime>
+        <ConversionRate>9.19</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>106.94</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>121.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>150.94</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>111.29</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>80.74</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>81.21</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>78.88</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>9.68</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>16.49</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>28.52</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>29.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>3.03</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>29.11</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>27.30</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>07-04-2016</ConversionTime>
+        <ConversionRate>9.22</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>106.74</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>121.65</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>150.19</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>111.72</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>80.58</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>81.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>79.01</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>9.87</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>16.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>28.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>29.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>3.03</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>29.06</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>27.27</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>08-04-2016</ConversionTime>
+        <ConversionRate>9.24</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>106.66</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>121.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>150.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>111.52</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>80.42</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>81.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>79.01</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>9.81</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>16.48</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>28.44</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>29.29</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>3.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>29.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>27.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>09-04-2016</ConversionTime>
+        <ConversionRate>9.24</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>106.66</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>121.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>150.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>111.52</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>80.42</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>81.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>79.01</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>9.81</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>16.48</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>28.44</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>29.29</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>3.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>29.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>27.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>10-04-2016</ConversionTime>
+        <ConversionRate>9.24</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>106.66</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>121.60</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>150.67</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>111.89</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>80.62</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>82.16</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>79.01</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>9.87</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>16.50</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>28.44</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>29.29</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>3.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>29.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>27.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>11-04-2016</ConversionTime>
+        <ConversionRate>9.26</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>106.52</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>121.25</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>151.14</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>111.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>80.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>81.92</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>79.14</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>9.85</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>16.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>28.40</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>29.25</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>3.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>29.00</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>27.38</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>12-04-2016</ConversionTime>
+        <ConversionRate>9.28</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>106.70</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>121.96</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>152.72</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>112.03</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>81.76</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>82.95</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>79.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>9.86</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>16.52</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>28.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>29.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>29.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>27.50</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>13-04-2016</ConversionTime>
+        <ConversionRate>9.34</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>106.80</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>120.92</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>152.07</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>111.08</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>81.96</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>83.57</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>79.20</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>9.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>16.50</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>28.48</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>29.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>29.08</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>27.58</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>14-04-2016</ConversionTime>
+        <ConversionRate>9.30</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>106.93</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>120.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>151.58</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>110.67</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>82.27</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>83.29</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>78.42</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>9.80</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>16.49</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>28.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>29.36</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>3.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>29.11</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>27.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>15-04-2016</ConversionTime>
+        <ConversionRate>9.26</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>106.93</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>120.42</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>151.59</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>110.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>82.57</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>83.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>78.64</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>9.79</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>16.50</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>28.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>29.36</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>29.10</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>27.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>16-04-2016</ConversionTime>
+        <ConversionRate>9.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>106.93</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>120.42</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>151.59</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>110.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>82.57</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>83.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>78.64</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>9.79</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>16.50</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>28.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>29.36</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>29.10</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>27.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>17-04-2016</ConversionTime>
+        <ConversionRate>9.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>106.93</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>120.65</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>151.91</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>110.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>82.59</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>83.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>78.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>9.83</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>16.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>28.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>29.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>29.11</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>27.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>18-04-2016</ConversionTime>
+        <ConversionRate>9.32</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>106.85</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>120.81</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>151.61</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>110.73</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>82.27</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>82.86</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>78.87</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>9.86</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>16.49</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>28.49</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>29.34</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>29.09</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>27.21</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>19-04-2016</ConversionTime>
+        <ConversionRate>9.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>106.79</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>121.06</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>152.93</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>110.89</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>82.91</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>83.60</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>79.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>9.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>16.51</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>28.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>29.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>3.06</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>29.07</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>27.49</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>20-04-2016</ConversionTime>
+        <ConversionRate>9.44</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>106.18</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>120.68</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>152.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>110.48</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>82.95</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>83.74</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>79.28</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>9.74</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>16.41</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>28.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>29.16</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>3.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>28.91</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>27.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>21-04-2016</ConversionTime>
+        <ConversionRate>9.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>106.41</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>120.18</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>152.59</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>109.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>83.08</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>84.00</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>79.01</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>9.69</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>16.42</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>28.38</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>29.22</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>3.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>28.97</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>27.34</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>22-04-2016</ConversionTime>
+        <ConversionRate>9.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>106.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>120.40</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>153.03</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>109.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>82.73</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>83.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>79.08</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>9.67</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>16.44</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>28.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>29.32</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>29.07</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>27.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>23-04-2016</ConversionTime>
+        <ConversionRate>9.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>106.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>120.40</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>153.03</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>109.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>82.73</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>83.77</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>79.08</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>9.67</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>16.44</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>28.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>29.32</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>29.07</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>27.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>24-04-2016</ConversionTime>
+        <ConversionRate>9.33</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>106.68</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>119.78</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>153.75</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>109.02</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>82.23</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>84.22</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>78.76</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>9.54</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>16.41</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>28.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>29.30</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>3.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>29.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>27.37</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>25-04-2016</ConversionTime>
+        <ConversionRate>9.28</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>107.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>120.47</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>154.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>109.73</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>82.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>84.24</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>79.12</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>9.63</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>16.48</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>28.54</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>29.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>29.14</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>27.41</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>26-04-2016</ConversionTime>
+        <ConversionRate>9.31</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>106.70</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>120.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>155.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>109.54</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>82.68</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>84.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>78.93</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>9.63</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>16.43</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>28.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>29.30</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>3.04</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>29.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>27.20</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>27-04-2016</ConversionTime>
+        <ConversionRate>9.29</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>106.56</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>120.48</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>155.35</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>109.53</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>81.11</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>84.57</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>79.00</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>9.58</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>16.41</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>28.41</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>29.27</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>3.03</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>29.01</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>27.24</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>28-04-2016</ConversionTime>
+        <ConversionRate>9.27</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>106.63</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>121.12</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>155.55</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>110.24</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>81.36</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>84.86</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>79.36</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>9.86</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>16.46</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>28.43</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>29.29</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>3.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>29.03</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>27.39</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>29-04-2016</ConversionTime>
+        <ConversionRate>9.35</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>106.71</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>121.52</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>155.72</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>110.80</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>81.40</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>85.25</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>79.41</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>9.97</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>16.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>28.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>29.32</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>3.06</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>29.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>27.32</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>30-04-2016</ConversionTime>
+        <ConversionRate>9.35</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>INR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>160.15</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>USD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>106.71</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>EUR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>121.52</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>GBP</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>155.72</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CHF</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>110.80</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AUD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>81.40</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CAD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>85.25</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SGD</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>79.41</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>JPY</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>9.97</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>CNH</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>16.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>SAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>28.45</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>QAR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>29.32</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>THB</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>3.06</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>AED</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>29.05</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>MYR</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>27.32</ConversionRate > 
+    </CurrencyConversionResponse>
+    <CurrencyConversionResponse>
+        <BaseCurrency>KPW</BaseCurrency> 
+        <TargetCurrency>NPR</TargetCurrency>
+        <ConversionTime>01-05-2016</ConversionTime>
+        <ConversionRate>9.35</ConversionRate > 
+    </CurrencyConversionResponse>
+</CurrencyConversion>
