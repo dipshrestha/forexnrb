@@ -21,7 +21,8 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
     var App = {
 
         init: function() {
-            Helper.flushLocalStorage();
+            //Helper.flushLocalStorage(); only for DEBUG!
+
             ClickHandler.render();
 
             document.querySelector('#baseCur').addEventListener('change', function() {
