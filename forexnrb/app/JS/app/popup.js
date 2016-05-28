@@ -1,12 +1,13 @@
 /*
 File:           popup.js
 Version:        1.1.0
-Last changed:   2016/03/08
-Last changes:   Bug fixes, refractoring, loading sign, data caching for optimization
+Last changed:   2016/05/28
+Last changes:   Product name modification, bug fixes, refractoring, loading sign, data caching for optimization
 
-Purpose:        Javascript functions to populate data into popup. Connect to NRB, gets data and shows in chart.
+Purpose:        Javascript functions to populate data into popup. Connects to Nepal Rastra Bank (NRB), 
+                gets exchange rate data and shows in chart.
 Author:         Sharad Subedi, Amit Jain, Dipesh Shrestha
-Product:        Foreign Currency Exchange NRB
+Product:        Nepal Foreign Currency Exchange
 
 Note:
 Chrome cross-domain request -> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files  --user-data-dir --disable-web-security
@@ -404,7 +405,7 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
                         + Helper.getTrendLabel(Helper.getTrendDays()) +" trend";
 
             return {
-                theme: "theme2",
+                theme: "theme3",
                 title: {
                     text: chartText,
                     fontFamily: "Helvetica Neue,Helvetica,Arial,sans-serif",
