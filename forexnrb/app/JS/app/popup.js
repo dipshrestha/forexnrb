@@ -22,7 +22,7 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
     var App = {
 
         init: function() {
-            //Helper.flushLocalStorage(); only for DEBUG!
+            // Helper.flushLocalStorage(); //only for DEBUG!
 
             ClickHandler.render();
 
@@ -30,40 +30,27 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
                 this.blur();
                 ClickHandler.chooseCurrency(this.options[this.selectedIndex].text);
             });
-            document.getElementById('line').addEventListener('click', function () {
-                ClickHandler.chooseChartType(this.id);
-            });
-            document.getElementById('column').addEventListener('click', function () {
-                ClickHandler.chooseChartType(this.id);
-            });
-            document.getElementById('seven').addEventListener('click', function () {
-                ClickHandler.chooseTrendLabel(7);     
-            });
-            document.getElementById('fifteen').addEventListener('click', function () {
-                ClickHandler.chooseTrendLabel(15);
-            });
-            document.getElementById('thirty').addEventListener('click', function () {
-                ClickHandler.chooseTrendLabel(30);
-            });
-            document.getElementById('sixty').addEventListener('click', function () {
-                ClickHandler.chooseTrendLabel(60);
-            });
-            document.getElementById('three').addEventListener('click', function () {
-                ClickHandler.chooseTrendLabel(91);
-            });
-            document.getElementById('six').addEventListener('click', function () {
-                ClickHandler.chooseTrendLabel(182);
-            });
-            document.getElementById('one').addEventListener('click', function () {
-                ClickHandler.chooseTrendLabel(365);
-            });
+
+            var chartArr = document.getElementsByClassName("np-chart");
+            for(var i = 0; i < chartArr.length; i++) {
+                chartArr[i].addEventListener('click', function () {
+                    ClickHandler.chooseChartType(this.id);     
+                });
+            }
+
+            var labelArr = document.getElementsByClassName("np-label");
+            for(var i = 0; i < labelArr.length; i++) {
+                labelArr[i].addEventListener('click', function () {
+                    ClickHandler.chooseTrendLabel(this.id);     
+                });
+            }
         }
     }
 
     /**
     *
     * Helper to get/set data into localStorage, create dates
-    * -- currency, chartType, trendDays are stored in localStorage
+    * -- currency, chartType, chartData, todayRate, trendDays are stored in localStorage
     *
     */
     var Helper = {
@@ -102,6 +89,22 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
             localStorage.days = days;
         },
 
+        getTodayRate: function() {
+            if(localStorage.todayRate) {
+                return localStorage.todayRate;
+            }
+            return "N/A"; // default
+        },
+
+        setTodayRate: function(todayRate ) {
+            localStorage.todayRate = todayRate;
+        },
+
+        // Get cached data for the current currency
+        // 
+        //  example of cached data for 7days
+        //  k518400000 = {"data":{"USD":[..], "JPN":[..], ...}, "date":"29-05-2016"}
+        //  
         getCachedChartData: function(days) {
             var key = "k" + days;
             var curData = Helper._getCachedChartData(days);
@@ -202,7 +205,7 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
         },
         chooseChartType: function(type) {
             Helper.setChartType(type);
-            ChartCreator.generateChartfromCache("chartPlaceholder", Helper.getChartType());
+            ClickHandler.render();
         },
         chooseTrendLabel: function(days) {
             Helper.setTrendDays(days);
@@ -215,6 +218,7 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
             // if data is already present don't make a call
             var days = Helper.unFormatDate(toDate) - Helper.unFormatDate(fromDate);
             var cachedData = Helper.getCachedChartData(days);
+
             if(!cachedData) {
                 ExchangeDataLoader.load(fromDate, toDate, ClickHandler.showChart, ClickHandler.showError);
             }else {
@@ -224,17 +228,18 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
         showChart: function(respData) {
             ChartCreator.generateChart(respData, "chartPlaceholder", Helper.getChartType(), 
                 Helper.getFromDateParts(Helper.getTrendDays()), Helper.getToDateParts());
-            var currentRate = ChartCreator.getChartCurrentRate();
-            ClickHandler.show(currentRate);
+
+            ClickHandler.show();
         },
         showChartFromData: function(chartData) {
             ChartCreator.generateChartFromData(chartData, "chartPlaceholder", Helper.getChartType(), 
                 Helper.getFromDateParts(Helper.getTrendDays()), Helper.getToDateParts());
-            var currentRate = ChartCreator.getChartCurrentRate();
-            ClickHandler.show(currentRate);
+
+            ClickHandler.show();
         },
-        show:function(todayRate) {
+        show:function() {
             var curBaseCurrency = Helper.getCurrentBaseCurrency(),
+                todayRate = Helper.getTodayRate(),
                 innerval = "Current exchange rate 1&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;"+"NRS";
             document.getElementById("exchangeRate").innerHTML = innerval;
             document.getElementById('curDate').innerHTML = new Date().toLocaleDateString("en-US", 
@@ -314,17 +319,15 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
     */
     var ChartCreator = {
 
-        // storage for last chart data
-        chartDataCache: null,
-
         getChartMinRate: function(chartData) {
             return Math.floor(Math.min.apply(Math, chartData.map(function (o) { return o.y; })));
         },
         getChartMaxRate: function(chartData) {
             return Math.ceil(Math.max.apply(Math, chartData.map(function (o) { return o.y; })));
         },
-        getChartCurrentRate: function() {
-            var chartData = ChartCreator.chartDataCache;
+
+        // the last one is the latest
+        getChartTodayRate: function(chartData) {
             if(chartData) {
                 return chartData[chartData.length - 1].y;
             }
@@ -333,26 +336,23 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
         generateChart: function(respData, chartPlaceholder, chartType, fromDate, toDate) {
             var chartData = ChartCreator.generateChartData(respData, fromDate, toDate);
 
-            // store in the object
-            ChartCreator.chartDataCache = chartData;
-
             // store in the localStorage!
             var days = Helper.unFormatDate(toDate) - Helper.unFormatDate(fromDate);
             Helper.setCachedChartData(days, chartData);
+            Helper.setTodayRate(ChartCreator.getChartTodayRate(chartData));
 
             ChartCreator.generateChartFromData(chartData, chartPlaceholder, chartType, fromDate, toDate);
         },
+
         generateChartFromData: function(chartData, chartPlaceholder, chartType, fromDate, toDate) {
             var chartOptions = ChartCreator.generateChartOptions(chartData, chartType),
                 chart = new CanvasJS.Chart(chartPlaceholder, chartOptions);
+
+            // store in the localStorage!
+            Helper.setTodayRate(ChartCreator.getChartTodayRate(chartData));
             chart.render();
         },
-        generateChartfromCache: function(chartPlaceholder, chartType) {
-            var chartData = ChartCreator.chartDataCache,
-                chartOptions = ChartCreator.generateChartOptions(chartData, chartType),
-                chart = new CanvasJS.Chart(chartPlaceholder, chartOptions);
-            chart.render();
-        },
+
         generateChartData: function (respData, fromDate, toDate) {
 
             var xmlDoc = respData, 
