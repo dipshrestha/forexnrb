@@ -19,15 +19,18 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
 
 (function () {
 
+    /**
+    *
+    * Setup event listeners
+    *
+    */
     var App = {
 
+        // 
         init: function() {
             // Helper.flushLocalStorage(); //only for DEBUG!
 
-            ClickHandler.render();
-
             document.querySelector('#baseCur').addEventListener('change', function() {
-                this.blur();
                 ClickHandler.chooseCurrency(this.options[this.selectedIndex].text);
             });
 
@@ -44,6 +47,8 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
                     ClickHandler.chooseTrendLabel(this.id);     
                 });
             }
+
+            ClickHandler.render();
         }
     }
 
@@ -54,7 +59,6 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
     *
     */
     var Helper = {
-
 
         getCurrentBaseCurrency: function() {
             if(localStorage.curBaseCurrency) {
@@ -246,15 +250,18 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
                         {weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
             document.getElementById('baseCur').value = curBaseCurrency;
 
-            ClickHandler.showElement("chartPlaceholder");
+            ClickHandler.showPlaceholder("chartPlaceholder");
+
+            ClickHandler.showBold(document.getElementsByClassName('np-label'), Helper.getTrendDays());
+            ClickHandler.showBold(document.getElementsByClassName('np-chart'), Helper.getChartType());
         },
         showLoading: function() {
-            ClickHandler.showElement("loadingPlaceholder");
+            ClickHandler.showPlaceholder("loadingPlaceholder");
         },
         showError: function() {
-            ClickHandler.showElement("errorPlaceholder");
+            ClickHandler.showPlaceholder("errorPlaceholder");
         },
-        showElement: function(elemId) {
+        showPlaceholder: function(elemId) {
             var elemIds = ["chartPlaceholder", "loadingPlaceholder", "errorPlaceholder"],
                 i;
             for(i in elemIds) {
@@ -274,6 +281,25 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
                 e.classList.remove('hidden');
             }else {
                 e.classList.add('hidden');
+            }
+        },
+        showBold: function(elems, elemId) {
+            for(var i = 0; i < elems.length; i++) {
+                if(elemId == elems[i].id) {
+                    ClickHandler.boldUnbold(elems[i], true);
+                } else {
+                    ClickHandler.boldUnbold(elems[i], false);
+                }
+            }
+        },
+        boldUnbold: function(e, isBold) {
+            if(e == null) {
+                return;
+            }
+            if(isBold) {
+                e.classList.add('bold');
+            }else {
+                e.classList.remove('bold');
             }
         }
     }
@@ -405,7 +431,7 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
                         + Helper.getTrendLabel(Helper.getTrendDays()) +" trend";
 
             return {
-                theme: "theme3",
+                theme: "theme1",
                 title: {
                     text: chartText,
                     fontFamily: "Helvetica Neue,Helvetica,Arial,sans-serif",

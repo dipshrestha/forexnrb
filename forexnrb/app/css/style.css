@@ -8,6 +8,10 @@ a {
 	color: rgb(79, 129, 188);
 }
 
+a:focus, select:focus {
+  outline: none;
+}
+
 select
 {
 	font-size: 11px;
@@ -75,7 +79,11 @@ select
 	visibility:hidden;
 }
 
+.bold {
+	font-weight: bold;
+}
 #mainContainer {
 	height: 200px;
 	border: solid black 1px;
+	overflow: hidden;
 }
