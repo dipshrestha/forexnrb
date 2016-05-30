@@ -25,6 +25,7 @@ select
 	font-weight: bold;
 	font-style: italic;
 	color: #daa20a;
+	margin-left: 10px;
 }
 
 .trend{
@@ -86,4 +87,7 @@ select
 	height: 200px;
 	border: solid black 1px;
 	overflow: hidden;
+}
+#exchangeRate {
+	margin-left: 10px;
 }
