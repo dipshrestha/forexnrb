@@ -112,7 +112,7 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
                 var key = "k" + days;
                 var curData = this._getCachedChartData(days);
                 var cur = this.getCurrentBaseCurrency();
-                if(curData[cur]) {
+                if(curData[cur] && curData[cur].length > 0) {
                     return curData[cur];
                 }
                 return null; // default
