@@ -13,12 +13,6 @@ Note:
 Chrome cross-domain request -> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files  --user-data-dir --disable-web-security
 NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
 
--- Changes in data format from NRB --
-CurrencyConversionResponse -> Currency
-CurrencyConversion -> Conversion
-ConversionTime-> Date
-ConversionRate -> TargetSell
-
 */
 
 
@@ -422,13 +416,16 @@ ConversionRate -> TargetSell
                     conversionRate;
                 while (result)
                 {
-                    conversionTime = result.getElementsByTagName("Date")[0].childNodes[0].nodeValue,
-                    conversionRate = result.getElementsByTagName("TargetSell")[0].childNodes[0].nodeValue;
+                    conversionTime = result.getElementsByTagName("Date")[0].childNodes[0],
+                    conversionRate = result.getElementsByTagName("TargetSell")[0].childNodes[0];
                     
-                    chartD.push({
-                        label: new String(conversionTime),
-                        y: parseFloat(conversionRate)
-                    });
+                    // there are missing data sometimes, so skip them
+                    if(conversionTime && conversionRate) {                    
+                        chartD.push({
+                            label: new String(conversionTime.nodeValue),
+                            y: parseFloat(conversionRate.nodeValue)
+                        });
+                    }
                                 
                     result=nodes.iterateNext();
                 }
