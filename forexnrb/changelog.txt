@@ -1,0 +1,8 @@
+-- v1.1.0
+Product name modification, bug fixes, refractoring, loading sign, data caching for optimization, changes in data format from NRB.
+
+-- Changes in data format from NRB as below
+CurrencyConversionResponse -> Currency
+CurrencyConversion -> Conversion
+ConversionTime-> Date
+ConversionRate -> TargetSell
