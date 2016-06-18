@@ -1,8 +1,8 @@
 /*
 File:           popup.js
 Version:        1.1.0
-Last changed:   2016/05/28
-Last changes:   Product name modification, bug fixes, refractoring, loading sign, data caching for optimization
+Last changed:   2016/06/18
+Last changes:   Product name modification, bug fixes, refractoring, loading sign, data caching for optimization, changes in data format from NRB.
 
 Purpose:        Javascript functions to populate data into popup. Connects to Nepal Rastra Bank (NRB), 
                 gets exchange rate data and shows in chart.
@@ -12,6 +12,13 @@ Product:        Nepal Foreign Currency Exchange
 Note:
 Chrome cross-domain request -> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files  --user-data-dir --disable-web-security
 NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
+
+-- Changes in data format from NRB --
+CurrencyConversionResponse -> Currency
+CurrencyConversion -> Conversion
+ConversionTime-> Date
+ConversionRate -> TargetSell
+
 */
 
 
@@ -390,8 +397,8 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
                 var xmlDoc = respData, 
                     curBaseCurrency = helper.getCurrentBaseCurrency(),
                     todayDate = toDate,
-                    intPath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'" 
-                        + curBaseCurrency + "\' and ConversionTime=\'" + todayDate + "\']/ConversionRate",
+                    intPath = "/Conversion/Currency[BaseCurrency=\'" 
+                        + curBaseCurrency + "\' and Date=\'" + todayDate + "\']/TargetSell",
                     intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
 
                 // -------------------------------------------------------------------------------------------- //
@@ -401,13 +408,13 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
 
                 while( intervalNode.iterateNext() === null && tempTodayDate > tempFromDate) {
                     tempTodayDate.setDate(tempTodayDate.getDate() - 1);
-                    intPath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'" + curBaseCurrency 
-                        + "\' and ConversionTime=\'" + helper.formatDate(tempTodayDate) + "\']/ConversionRate";
+                    intPath = "/Conversion/Currency[BaseCurrency=\'" + curBaseCurrency 
+                        + "\' and Date=\'" + helper.formatDate(tempTodayDate) + "\']/TargetSell";
                     intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
                 }
                 // -------------------------------------------------------------------------------------------- //
 
-                var ratePath = "/CurrencyConversion/CurrencyConversionResponse[BaseCurrency=\'"+ curBaseCurrency +"\']",
+                var ratePath = "/Conversion/Currency[BaseCurrency=\'"+ curBaseCurrency +"\']",
                     nodes = xmlDoc.evaluate(ratePath, xmlDoc, null, XPathResult.ANY_TYPE, null),
                     result = nodes.iterateNext(),
                     chartD = [],
@@ -415,8 +422,8 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
                     conversionRate;
                 while (result)
                 {
-                    conversionTime = result.getElementsByTagName("ConversionTime")[0].childNodes[0].nodeValue,
-                    conversionRate = result.getElementsByTagName("ConversionRate")[0].childNodes[0].nodeValue;
+                    conversionTime = result.getElementsByTagName("Date")[0].childNodes[0].nodeValue,
+                    conversionRate = result.getElementsByTagName("TargetSell")[0].childNodes[0].nodeValue;
                     
                     chartD.push({
                         label: new String(conversionTime),
