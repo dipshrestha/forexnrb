@@ -1,8 +1,8 @@
 /*
 File:           popup.js
-Version:        1.1.0
-Last changed:   2016/06/18
-Last changes:   Product name modification, bug fixes, refractoring, loading sign, data caching for optimization, changes in data format from NRB.
+Version:        1.1.1
+Last changed:   2016/11/27
+Last changes:   NRB moved to https, so changes on the URL
 
 Purpose:        Javascript functions to populate data into popup. Connects to Nepal Rastra Bank (NRB), 
                 gets exchange rate data and shows in chart.
@@ -11,7 +11,7 @@ Product:        Nepal Foreign Currency Exchange
 
 Note:
 Chrome cross-domain request -> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files  --user-data-dir --disable-web-security
-NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
+NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
 
 */
 
@@ -317,12 +317,12 @@ NRB url -> http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016
     */
     var ExchangeDataLoader = function() {
 
-        // http://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
+        // https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
         this.load = function(fromDate, toDate, onSuccess, onFailure) {
             var self = this,
                 fromDateParts = fromDate.split('-'),
                 toDateParts = toDate.split('-'),
-                exchangeRateUrl = 'http://www.nrb.org.np/exportForexXML.php'
+                exchangeRateUrl = 'https://www.nrb.org.np/exportForexXML.php'
                 + '?YY='  + fromDateParts[2]    + '&MM=' + fromDateParts[1]  + '&DD=' + fromDateParts[0] 
                 + '&YY1=' + toDateParts[2]      + '&MM1=' + toDateParts[1]  + '&DD1=' + toDateParts[0];
             var req = new XMLHttpRequest();
