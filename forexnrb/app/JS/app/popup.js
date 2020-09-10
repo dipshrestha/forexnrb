@@ -2,7 +2,7 @@
 File:           popup.js
 Version:        1.2.1
 Last changed:   2020/09/12
-Last changes:   NRB moved to JSON format from XML, so changes to suppor that.
+Last changes:   NRB moved to JSON format from XML, so changes to support that.
 
 Purpose:        Javascript functions to populate data into popup. Connects to Nepal Rastra Bank (NRB), 
                 gets exchange rate data and shows in chart.
@@ -322,8 +322,7 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
     // and if it's > 1 then do subsequent ajax calls to fetch all data
     this.load = function(fromDate, toDate, onSuccess, onFailure) {
 
-      var self = this,
-        fromDateParts = fromDate.split('-'),
+      var fromDateParts = fromDate.split('-'),
         toDateParts = toDate.split('-'),
         exchangeRateUrl = 'https://www.nrb.org.np/api/forex/v1/rates' +
         '?from=' + fromDateParts[2] + '-' + fromDateParts[1] + '-' + fromDateParts[0] +
@@ -331,12 +330,14 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         '&per_page=100&page=1';
 
       const myHeaders = new Headers();
+      myHeaders.append('pragma', 'no-cache');
+      myHeaders.append('Cache-Control', 'no-cache');
 
       const myRequest = new Request(exchangeRateUrl, {
         method: 'GET',
         headers: myHeaders,
         mode: 'cors',
-        cache: 'default',
+        cache: 'no-cache',
       });
 
       fetch(myRequest)
@@ -356,22 +357,6 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         .catch(error => {
           onFailure(error);
         });
-      /*
-            var req = new XMLHttpRequest();
-            req.open("GET", exchangeRateUrl, true);
-            req.onreadystatechange = function(oEvent) {
-              if (req.readyState === 4) {
-                if (req.status === 200) {
-                  onSuccess(req.responseXML);
-                } else {
-                  onFailure(req);
-                }
-              }
-            };
-            //NRB url -> https://www.nrb.org.np/api/forex/v1/rates?from=2016-03-31&to=2016-04-30&per_page=100&page=1
-            req.setRequestHeader("If-Modified-Since", "Wed, 01 Jan 2080 00:00:00 GMT");
-            req.send();
-            */
     }
   }
 
