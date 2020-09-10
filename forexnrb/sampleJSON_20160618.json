@@ -1,0 +1,1545 @@
+{
+  "status":
+  {
+    "code": 200
+  },
+  "errors":
+  {
+    "validation": null
+  },
+  "params":
+  {
+    "from": "2016-06-13",
+    "to": "2016-06-19",
+    "per_page": "100",
+    "page": "1"
+  },
+  "data":
+  {
+    "payload": [
+    {
+      "date": "2016-06-19",
+      "published_on": "2016-06-19 00:00:00",
+      "modified_on": "2020-01-03 17:36:25",
+      "rates": [
+      {
+        "currency":
+        {
+          "iso3": "INR",
+          "name": "Indian Rupee",
+          "unit": 100
+        },
+        "buy": "160.00",
+        "sell": "160.15"
+      },
+      {
+        "currency":
+        {
+          "iso3": "USD",
+          "name": "U.S. Dollar",
+          "unit": 1
+        },
+        "buy": "107.16",
+        "sell": "107.76"
+      },
+      {
+        "currency":
+        {
+          "iso3": "EUR",
+          "name": "European Euro",
+          "unit": 1
+        },
+        "buy": "120.55",
+        "sell": "121.22"
+      },
+      {
+        "currency":
+        {
+          "iso3": "GBP",
+          "name": "UK Pound Sterling",
+          "unit": 1
+        },
+        "buy": "153.08",
+        "sell": "153.94"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CHF",
+          "name": "Swiss Franc",
+          "unit": 1
+        },
+        "buy": "111.26",
+        "sell": "111.88"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AUD",
+          "name": "Australian Dollar",
+          "unit": 1
+        },
+        "buy": "79.22",
+        "sell": "79.66"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CAD",
+          "name": "Canadian Dollar",
+          "unit": 1
+        },
+        "buy": "82.91",
+        "sell": "83.37"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SGD",
+          "name": "Singapore Dollar",
+          "unit": 1
+        },
+        "buy": "79.37",
+        "sell": "79.82"
+      },
+      {
+        "currency":
+        {
+          "iso3": "JPY",
+          "name": "Japanese Yen",
+          "unit": 10
+        },
+        "buy": "10.28",
+        "sell": "10.34"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CNY",
+          "name": "Chinese Yuan",
+          "unit": 1
+        },
+        "buy": "16.26",
+        "sell": "16.35"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SAR",
+          "name": "Saudi Arabian Riyal",
+          "unit": 1
+        },
+        "buy": "28.58",
+        "sell": "28.74"
+      },
+      {
+        "currency":
+        {
+          "iso3": "QAR",
+          "name": "Qatari Riyal",
+          "unit": 1
+        },
+        "buy": "29.44",
+        "sell": "29.60"
+      },
+      {
+        "currency":
+        {
+          "iso3": "THB",
+          "name": "Thai Baht",
+          "unit": 1
+        },
+        "buy": "3.04",
+        "sell": "3.06"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AED",
+          "name": "UAE Dirham",
+          "unit": 1
+        },
+        "buy": "29.18",
+        "sell": "29.34"
+      },
+      {
+        "currency":
+        {
+          "iso3": "MYR",
+          "name": "Malaysian Ringgit",
+          "unit": 1
+        },
+        "buy": "26.13",
+        "sell": "26.28"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KRW",
+          "name": "South Korean Won",
+          "unit": 100
+        },
+        "buy": "9.13",
+        "sell": "9.19"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SEK",
+          "name": "Swedish Kroner",
+          "unit": 1
+        },
+        "buy": "12.85",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "DKK",
+          "name": "Danish Kroner",
+          "unit": 1
+        },
+        "buy": "16.21",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "HKD",
+          "name": "Hong Kong Dollar",
+          "unit": 1
+        },
+        "buy": "13.81",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KWD",
+          "name": "Kuwaity Dinar",
+          "unit": 1
+        },
+        "buy": "355.73",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "BHD",
+          "name": "Bahrain Dinar",
+          "unit": 1
+        },
+        "buy": "284.18",
+        "sell": "0.00"
+      }]
+    },
+    {
+      "date": "2016-06-18",
+      "published_on": "2016-06-18 00:00:00",
+      "modified_on": "2020-01-03 17:36:25",
+      "rates": [
+      {
+        "currency":
+        {
+          "iso3": "INR",
+          "name": "Indian Rupee",
+          "unit": 100
+        },
+        "buy": "160.00",
+        "sell": "160.15"
+      },
+      {
+        "currency":
+        {
+          "iso3": "USD",
+          "name": "U.S. Dollar",
+          "unit": 1
+        },
+        "buy": "107.16",
+        "sell": "107.76"
+      },
+      {
+        "currency":
+        {
+          "iso3": "EUR",
+          "name": "European Euro",
+          "unit": 1
+        },
+        "buy": "120.55",
+        "sell": "121.22"
+      },
+      {
+        "currency":
+        {
+          "iso3": "GBP",
+          "name": "UK Pound Sterling",
+          "unit": 1
+        },
+        "buy": "153.08",
+        "sell": "153.94"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CHF",
+          "name": "Swiss Franc",
+          "unit": 1
+        },
+        "buy": "111.26",
+        "sell": "111.88"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AUD",
+          "name": "Australian Dollar",
+          "unit": 1
+        },
+        "buy": "79.22",
+        "sell": "79.66"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CAD",
+          "name": "Canadian Dollar",
+          "unit": 1
+        },
+        "buy": "82.91",
+        "sell": "83.37"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SGD",
+          "name": "Singapore Dollar",
+          "unit": 1
+        },
+        "buy": "79.37",
+        "sell": "79.82"
+      },
+      {
+        "currency":
+        {
+          "iso3": "JPY",
+          "name": "Japanese Yen",
+          "unit": 10
+        },
+        "buy": "10.28",
+        "sell": "10.34"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CNY",
+          "name": "Chinese Yuan",
+          "unit": 1
+        },
+        "buy": "16.26",
+        "sell": "16.35"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SAR",
+          "name": "Saudi Arabian Riyal",
+          "unit": 1
+        },
+        "buy": "28.58",
+        "sell": "28.74"
+      },
+      {
+        "currency":
+        {
+          "iso3": "QAR",
+          "name": "Qatari Riyal",
+          "unit": 1
+        },
+        "buy": "29.44",
+        "sell": "29.60"
+      },
+      {
+        "currency":
+        {
+          "iso3": "THB",
+          "name": "Thai Baht",
+          "unit": 1
+        },
+        "buy": "3.04",
+        "sell": "3.06"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AED",
+          "name": "UAE Dirham",
+          "unit": 1
+        },
+        "buy": "29.18",
+        "sell": "29.34"
+      },
+      {
+        "currency":
+        {
+          "iso3": "MYR",
+          "name": "Malaysian Ringgit",
+          "unit": 1
+        },
+        "buy": "26.13",
+        "sell": "26.28"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KRW",
+          "name": "South Korean Won",
+          "unit": 100
+        },
+        "buy": "9.13",
+        "sell": "9.19"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SEK",
+          "name": "Swedish Kroner",
+          "unit": 1
+        },
+        "buy": "12.85",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "DKK",
+          "name": "Danish Kroner",
+          "unit": 1
+        },
+        "buy": "16.21",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "HKD",
+          "name": "Hong Kong Dollar",
+          "unit": 1
+        },
+        "buy": "13.81",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KWD",
+          "name": "Kuwaity Dinar",
+          "unit": 1
+        },
+        "buy": "355.73",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "BHD",
+          "name": "Bahrain Dinar",
+          "unit": 1
+        },
+        "buy": "284.18",
+        "sell": "0.00"
+      }]
+    },
+    {
+      "date": "2016-06-17",
+      "published_on": "2016-06-17 00:00:00",
+      "modified_on": "2020-01-03 17:36:25",
+      "rates": [
+      {
+        "currency":
+        {
+          "iso3": "INR",
+          "name": "Indian Rupee",
+          "unit": 100
+        },
+        "buy": "160.00",
+        "sell": "160.15"
+      },
+      {
+        "currency":
+        {
+          "iso3": "USD",
+          "name": "U.S. Dollar",
+          "unit": 1
+        },
+        "buy": "107.28",
+        "sell": "107.88"
+      },
+      {
+        "currency":
+        {
+          "iso3": "EUR",
+          "name": "European Euro",
+          "unit": 1
+        },
+        "buy": "120.75",
+        "sell": "121.42"
+      },
+      {
+        "currency":
+        {
+          "iso3": "GBP",
+          "name": "UK Pound Sterling",
+          "unit": 1
+        },
+        "buy": "152.06",
+        "sell": "152.91"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CHF",
+          "name": "Swiss Franc",
+          "unit": 1
+        },
+        "buy": "111.60",
+        "sell": "112.23"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AUD",
+          "name": "Australian Dollar",
+          "unit": 1
+        },
+        "buy": "79.06",
+        "sell": "79.50"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CAD",
+          "name": "Canadian Dollar",
+          "unit": 1
+        },
+        "buy": "82.75",
+        "sell": "83.21"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SGD",
+          "name": "Singapore Dollar",
+          "unit": 1
+        },
+        "buy": "79.41",
+        "sell": "79.86"
+      },
+      {
+        "currency":
+        {
+          "iso3": "JPY",
+          "name": "Japanese Yen",
+          "unit": 10
+        },
+        "buy": "10.29",
+        "sell": "10.35"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CNY",
+          "name": "Chinese Yuan",
+          "unit": 1
+        },
+        "buy": "16.29",
+        "sell": "16.38"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SAR",
+          "name": "Saudi Arabian Riyal",
+          "unit": 1
+        },
+        "buy": "28.61",
+        "sell": "28.77"
+      },
+      {
+        "currency":
+        {
+          "iso3": "QAR",
+          "name": "Qatari Riyal",
+          "unit": 1
+        },
+        "buy": "29.47",
+        "sell": "29.64"
+      },
+      {
+        "currency":
+        {
+          "iso3": "THB",
+          "name": "Thai Baht",
+          "unit": 1
+        },
+        "buy": "3.05",
+        "sell": "3.06"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AED",
+          "name": "UAE Dirham",
+          "unit": 1
+        },
+        "buy": "29.21",
+        "sell": "29.37"
+      },
+      {
+        "currency":
+        {
+          "iso3": "MYR",
+          "name": "Malaysian Ringgit",
+          "unit": 1
+        },
+        "buy": "26.15",
+        "sell": "26.30"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KRW",
+          "name": "South Korean Won",
+          "unit": 100
+        },
+        "buy": "9.13",
+        "sell": "9.18"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SEK",
+          "name": "Swedish Kroner",
+          "unit": 1
+        },
+        "buy": "12.87",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "DKK",
+          "name": "Danish Kroner",
+          "unit": 1
+        },
+        "buy": "16.24",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "HKD",
+          "name": "Hong Kong Dollar",
+          "unit": 1
+        },
+        "buy": "13.83",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KWD",
+          "name": "Kuwaity Dinar",
+          "unit": 1
+        },
+        "buy": "355.94",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "BHD",
+          "name": "Bahrain Dinar",
+          "unit": 1
+        },
+        "buy": "284.49",
+        "sell": "0.00"
+      }]
+    },
+    {
+      "date": "2016-06-16",
+      "published_on": "2016-06-16 00:00:00",
+      "modified_on": "2020-01-03 17:36:25",
+      "rates": [
+      {
+        "currency":
+        {
+          "iso3": "INR",
+          "name": "Indian Rupee",
+          "unit": 100
+        },
+        "buy": "160.00",
+        "sell": "160.15"
+      },
+      {
+        "currency":
+        {
+          "iso3": "USD",
+          "name": "U.S. Dollar",
+          "unit": 1
+        },
+        "buy": "107.12",
+        "sell": "107.72"
+      },
+      {
+        "currency":
+        {
+          "iso3": "EUR",
+          "name": "European Euro",
+          "unit": 1
+        },
+        "buy": "120.30",
+        "sell": "120.97"
+      },
+      {
+        "currency":
+        {
+          "iso3": "GBP",
+          "name": "UK Pound Sterling",
+          "unit": 1
+        },
+        "buy": "152.06",
+        "sell": "152.91"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CHF",
+          "name": "Swiss Franc",
+          "unit": 1
+        },
+        "buy": "110.93",
+        "sell": "111.55"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AUD",
+          "name": "Australian Dollar",
+          "unit": 1
+        },
+        "buy": "79.22",
+        "sell": "79.66"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CAD",
+          "name": "Canadian Dollar",
+          "unit": 1
+        },
+        "buy": "83.42",
+        "sell": "83.89"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SGD",
+          "name": "Singapore Dollar",
+          "unit": 1
+        },
+        "buy": "79.10",
+        "sell": "79.54"
+      },
+      {
+        "currency":
+        {
+          "iso3": "JPY",
+          "name": "Japanese Yen",
+          "unit": 10
+        },
+        "buy": "10.08",
+        "sell": "10.13"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CNY",
+          "name": "Chinese Yuan",
+          "unit": 1
+        },
+        "buy": "16.27",
+        "sell": "16.36"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SAR",
+          "name": "Saudi Arabian Riyal",
+          "unit": 1
+        },
+        "buy": "28.56",
+        "sell": "28.72"
+      },
+      {
+        "currency":
+        {
+          "iso3": "QAR",
+          "name": "Qatari Riyal",
+          "unit": 1
+        },
+        "buy": "29.42",
+        "sell": "29.59"
+      },
+      {
+        "currency":
+        {
+          "iso3": "THB",
+          "name": "Thai Baht",
+          "unit": 1
+        },
+        "buy": "3.04",
+        "sell": "3.06"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AED",
+          "name": "UAE Dirham",
+          "unit": 1
+        },
+        "buy": "29.16",
+        "sell": "29.33"
+      },
+      {
+        "currency":
+        {
+          "iso3": "MYR",
+          "name": "Malaysian Ringgit",
+          "unit": 1
+        },
+        "buy": "26.14",
+        "sell": "26.29"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KRW",
+          "name": "South Korean Won",
+          "unit": 100
+        },
+        "buy": "9.12",
+        "sell": "9.17"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SEK",
+          "name": "Swedish Kroner",
+          "unit": 1
+        },
+        "buy": "12.89",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "DKK",
+          "name": "Danish Kroner",
+          "unit": 1
+        },
+        "buy": "16.18",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "HKD",
+          "name": "Hong Kong Dollar",
+          "unit": 1
+        },
+        "buy": "13.80",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KWD",
+          "name": "Kuwaity Dinar",
+          "unit": 1
+        },
+        "buy": "355.23",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "BHD",
+          "name": "Bahrain Dinar",
+          "unit": 1
+        },
+        "buy": "284.06",
+        "sell": "0.00"
+      }]
+    },
+    {
+      "date": "2016-06-15",
+      "published_on": "2016-06-15 00:00:00",
+      "modified_on": "2020-01-03 17:36:25",
+      "rates": [
+      {
+        "currency":
+        {
+          "iso3": "INR",
+          "name": "Indian Rupee",
+          "unit": 100
+        },
+        "buy": "160.00",
+        "sell": "160.15"
+      },
+      {
+        "currency":
+        {
+          "iso3": "USD",
+          "name": "U.S. Dollar",
+          "unit": 1
+        },
+        "buy": "107.29",
+        "sell": "107.89"
+      },
+      {
+        "currency":
+        {
+          "iso3": "EUR",
+          "name": "European Euro",
+          "unit": 1
+        },
+        "buy": "120.37",
+        "sell": "121.04"
+      },
+      {
+        "currency":
+        {
+          "iso3": "GBP",
+          "name": "UK Pound Sterling",
+          "unit": 1
+        },
+        "buy": "151.75",
+        "sell": "152.60"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CHF",
+          "name": "Swiss Franc",
+          "unit": 1
+        },
+        "buy": "111.07",
+        "sell": "111.70"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AUD",
+          "name": "Australian Dollar",
+          "unit": 1
+        },
+        "buy": "78.71",
+        "sell": "79.15"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CAD",
+          "name": "Canadian Dollar",
+          "unit": 1
+        },
+        "buy": "83.42",
+        "sell": "83.89"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SGD",
+          "name": "Singapore Dollar",
+          "unit": 1
+        },
+        "buy": "79.10",
+        "sell": "79.54"
+      },
+      {
+        "currency":
+        {
+          "iso3": "JPY",
+          "name": "Japanese Yen",
+          "unit": 10
+        },
+        "buy": "10.15",
+        "sell": "10.21"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CNY",
+          "name": "Chinese Yuan",
+          "unit": 1
+        },
+        "buy": "16.27",
+        "sell": "16.36"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SAR",
+          "name": "Saudi Arabian Riyal",
+          "unit": 1
+        },
+        "buy": "28.61",
+        "sell": "28.77"
+      },
+      {
+        "currency":
+        {
+          "iso3": "QAR",
+          "name": "Qatari Riyal",
+          "unit": 1
+        },
+        "buy": "29.47",
+        "sell": "29.63"
+      },
+      {
+        "currency":
+        {
+          "iso3": "THB",
+          "name": "Thai Baht",
+          "unit": 1
+        },
+        "buy": "3.04",
+        "sell": "3.06"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AED",
+          "name": "UAE Dirham",
+          "unit": 1
+        },
+        "buy": "29.21",
+        "sell": "29.38"
+      },
+      {
+        "currency":
+        {
+          "iso3": "MYR",
+          "name": "Malaysian Ringgit",
+          "unit": 1
+        },
+        "buy": "26.14",
+        "sell": "26.28"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KRW",
+          "name": "South Korean Won",
+          "unit": 100
+        },
+        "buy": "9.09",
+        "sell": "9.14"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SEK",
+          "name": "Swedish Kroner",
+          "unit": 1
+        },
+        "buy": "12.90",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "DKK",
+          "name": "Danish Kroner",
+          "unit": 1
+        },
+        "buy": "16.19",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "HKD",
+          "name": "Hong Kong Dollar",
+          "unit": 1
+        },
+        "buy": "13.83",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KWD",
+          "name": "Kuwaity Dinar",
+          "unit": 1
+        },
+        "buy": "355.92",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "BHD",
+          "name": "Bahrain Dinar",
+          "unit": 1
+        },
+        "buy": "284.59",
+        "sell": "0.00"
+      }]
+    },
+    {
+      "date": "2016-06-14",
+      "published_on": "2016-06-14 00:00:00",
+      "modified_on": "2020-01-03 17:36:25",
+      "rates": [
+      {
+        "currency":
+        {
+          "iso3": "INR",
+          "name": "Indian Rupee",
+          "unit": 100
+        },
+        "buy": "160.00",
+        "sell": "160.15"
+      },
+      {
+        "currency":
+        {
+          "iso3": "USD",
+          "name": "U.S. Dollar",
+          "unit": 1
+        },
+        "buy": "107.08",
+        "sell": "107.68"
+      },
+      {
+        "currency":
+        {
+          "iso3": "EUR",
+          "name": "European Euro",
+          "unit": 1
+        },
+        "buy": "120.69",
+        "sell": "121.37"
+      },
+      {
+        "currency":
+        {
+          "iso3": "GBP",
+          "name": "UK Pound Sterling",
+          "unit": 1
+        },
+        "buy": "151.21",
+        "sell": "152.06"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CHF",
+          "name": "Swiss Franc",
+          "unit": 1
+        },
+        "buy": "110.97",
+        "sell": "111.60"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AUD",
+          "name": "Australian Dollar",
+          "unit": 1
+        },
+        "buy": "79.24",
+        "sell": "79.69"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CAD",
+          "name": "Canadian Dollar",
+          "unit": 1
+        },
+        "buy": "83.80",
+        "sell": "84.27"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SGD",
+          "name": "Singapore Dollar",
+          "unit": 1
+        },
+        "buy": "78.90",
+        "sell": "79.35"
+      },
+      {
+        "currency":
+        {
+          "iso3": "JPY",
+          "name": "Japanese Yen",
+          "unit": 10
+        },
+        "buy": "10.11",
+        "sell": "10.17"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CNY",
+          "name": "Chinese Yuan",
+          "unit": 1
+        },
+        "buy": "16.26",
+        "sell": "16.35"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SAR",
+          "name": "Saudi Arabian Riyal",
+          "unit": 1
+        },
+        "buy": "28.55",
+        "sell": "28.71"
+      },
+      {
+        "currency":
+        {
+          "iso3": "QAR",
+          "name": "Qatari Riyal",
+          "unit": 1
+        },
+        "buy": "29.42",
+        "sell": "29.58"
+      },
+      {
+        "currency":
+        {
+          "iso3": "THB",
+          "name": "Thai Baht",
+          "unit": 1
+        },
+        "buy": "3.04",
+        "sell": "3.06"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AED",
+          "name": "UAE Dirham",
+          "unit": 1
+        },
+        "buy": "29.15",
+        "sell": "29.32"
+      },
+      {
+        "currency":
+        {
+          "iso3": "MYR",
+          "name": "Malaysian Ringgit",
+          "unit": 1
+        },
+        "buy": "26.19",
+        "sell": "26.34"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KRW",
+          "name": "South Korean Won",
+          "unit": 100
+        },
+        "buy": "9.12",
+        "sell": "9.17"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SEK",
+          "name": "Swedish Kroner",
+          "unit": 1
+        },
+        "buy": "12.93",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "DKK",
+          "name": "Danish Kroner",
+          "unit": 1
+        },
+        "buy": "16.23",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "HKD",
+          "name": "Hong Kong Dollar",
+          "unit": 1
+        },
+        "buy": "13.79",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KWD",
+          "name": "Kuwaity Dinar",
+          "unit": 1
+        },
+        "buy": "355.29",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "BHD",
+          "name": "Bahrain Dinar",
+          "unit": 1
+        },
+        "buy": "284.00",
+        "sell": "0.00"
+      }]
+    },
+    {
+      "date": "2016-06-13",
+      "published_on": "2016-06-13 00:00:00",
+      "modified_on": "2020-01-03 17:36:25",
+      "rates": [
+      {
+        "currency":
+        {
+          "iso3": "INR",
+          "name": "Indian Rupee",
+          "unit": 100
+        },
+        "buy": "160.00",
+        "sell": "160.15"
+      },
+      {
+        "currency":
+        {
+          "iso3": "USD",
+          "name": "U.S. Dollar",
+          "unit": 1
+        },
+        "buy": "106.52",
+        "sell": "107.12"
+      },
+      {
+        "currency":
+        {
+          "iso3": "EUR",
+          "name": "European Euro",
+          "unit": 1
+        },
+        "buy": "119.84",
+        "sell": "120.52"
+      },
+      {
+        "currency":
+        {
+          "iso3": "GBP",
+          "name": "UK Pound Sterling",
+          "unit": 1
+        },
+        "buy": "151.93",
+        "sell": "152.79"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CHF",
+          "name": "Swiss Franc",
+          "unit": 1
+        },
+        "buy": "110.43",
+        "sell": "111.05"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AUD",
+          "name": "Australian Dollar",
+          "unit": 1
+        },
+        "buy": "78.55",
+        "sell": "78.99"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CAD",
+          "name": "Canadian Dollar",
+          "unit": 1
+        },
+        "buy": "83.36",
+        "sell": "83.83"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SGD",
+          "name": "Singapore Dollar",
+          "unit": 1
+        },
+        "buy": "78.31",
+        "sell": "78.75"
+      },
+      {
+        "currency":
+        {
+          "iso3": "JPY",
+          "name": "Japanese Yen",
+          "unit": 10
+        },
+        "buy": "9.96",
+        "sell": "10.01"
+      },
+      {
+        "currency":
+        {
+          "iso3": "CNY",
+          "name": "Chinese Yuan",
+          "unit": 1
+        },
+        "buy": "16.23",
+        "sell": "16.33"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SAR",
+          "name": "Saudi Arabian Riyal",
+          "unit": 1
+        },
+        "buy": "28.40",
+        "sell": "28.56"
+      },
+      {
+        "currency":
+        {
+          "iso3": "QAR",
+          "name": "Qatari Riyal",
+          "unit": 1
+        },
+        "buy": "29.26",
+        "sell": "29.42"
+      },
+      {
+        "currency":
+        {
+          "iso3": "THB",
+          "name": "Thai Baht",
+          "unit": 1
+        },
+        "buy": "3.02",
+        "sell": "3.04"
+      },
+      {
+        "currency":
+        {
+          "iso3": "AED",
+          "name": "UAE Dirham",
+          "unit": 1
+        },
+        "buy": "29.00",
+        "sell": "29.17"
+      },
+      {
+        "currency":
+        {
+          "iso3": "MYR",
+          "name": "Malaysian Ringgit",
+          "unit": 1
+        },
+        "buy": "26.19",
+        "sell": "26.33"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KRW",
+          "name": "South Korean Won",
+          "unit": 100
+        },
+        "buy": "9.09",
+        "sell": "9.14"
+      },
+      {
+        "currency":
+        {
+          "iso3": "SEK",
+          "name": "Swedish Kroner",
+          "unit": 1
+        },
+        "buy": "12.81",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "DKK",
+          "name": "Danish Kroner",
+          "unit": 1
+        },
+        "buy": "16.12",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "HKD",
+          "name": "Hong Kong Dollar",
+          "unit": 1
+        },
+        "buy": "13.72",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "KWD",
+          "name": "Kuwaity Dinar",
+          "unit": 1
+        },
+        "buy": "353.25",
+        "sell": "0.00"
+      },
+      {
+        "currency":
+        {
+          "iso3": "BHD",
+          "name": "Bahrain Dinar",
+          "unit": 1
+        },
+        "buy": "282.56",
+        "sell": "0.00"
+      }]
+    }]
+  },
+  "pagination":
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 100,
+    "total": 7,
+    "links":
+    {
+      "prev": null,
+      "next": null
+    }
+  }
+}
