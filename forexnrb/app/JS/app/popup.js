@@ -1,8 +1,8 @@
 /*
 File:           popup.js
-Version:        1.1.1
-Last changed:   2016/11/27
-Last changes:   NRB moved to https, so changes on the URL
+Version:        1.2.1
+Last changed:   2020/09/12
+Last changes:   NRB moved to JSON format from XML, so changes to suppor that.
 
 Purpose:        Javascript functions to populate data into popup. Connects to Nepal Rastra Bank (NRB), 
                 gets exchange rate data and shows in chart.
@@ -10,9 +10,8 @@ Author:         Sharad Subedi, Amit Jain, Dipesh Shrestha
 Product:        Nepal Foreign Currency Exchange
 
 Note:
-Chrome cross-domain request -> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files  --user-data-dir --disable-web-security
+Chrome cross-domain request -> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files  --user-data-dir="~/forexnrb/" --disable-web-security
 NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
-
 */
 
 
@@ -263,7 +262,8 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
       showLoading: function() {
         this.showPlaceholder("loadingPlaceholder");
       },
-      showError: function() {
+      showError: function(res) {
+        console.error(res);
         this.showPlaceholder("errorPlaceholder");
       },
       showPlaceholder: function(elemId) {
@@ -318,27 +318,60 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
   var ExchangeDataLoader = function() {
 
     // https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
+    // check the 'pages' parameter in response
+    // and if it's > 1 then do subsequent ajax calls to fetch all data
     this.load = function(fromDate, toDate, onSuccess, onFailure) {
+
       var self = this,
         fromDateParts = fromDate.split('-'),
         toDateParts = toDate.split('-'),
-        exchangeRateUrl = 'https://www.nrb.org.np/exportForexXML.php' +
-        '?YY=' + fromDateParts[2] + '&MM=' + fromDateParts[1] + '&DD=' + fromDateParts[0] +
-        '&YY1=' + toDateParts[2] + '&MM1=' + toDateParts[1] + '&DD1=' + toDateParts[0];
-      var req = new XMLHttpRequest();
+        exchangeRateUrl = 'https://www.nrb.org.np/api/forex/v1/rates' +
+        '?from=' + fromDateParts[2] + '-' + fromDateParts[1] + '-' + fromDateParts[0] +
+        '&to=' + toDateParts[2] + '-' + toDateParts[1] + '-' + toDateParts[0] +
+        '&per_page=100&page=1';
 
-      req.open("GET", exchangeRateUrl, true);
-      req.onreadystatechange = function(oEvent) {
-        if (req.readyState === 4) {
-          if (req.status === 200) {
-            onSuccess(req.responseXML);
-          } else {
-            onFailure();
+      const myHeaders = new Headers();
+
+      const myRequest = new Request(exchangeRateUrl, {
+        method: 'GET',
+        headers: myHeaders,
+        mode: 'cors',
+        cache: 'default',
+      });
+
+      fetch(myRequest)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
           }
-        }
-      };
-      req.setRequestHeader("If-Modified-Since", "Wed, 01 Jan 2080 00:00:00 GMT");
-      req.send();
+          return response.json();
+        })
+        .then(data => {
+          if (data && data.status && data.status.code != 200) {
+            throw new Error(JSON.stringify(data.errors.validation));
+          }
+          onSuccess(data.data && data.data.payload || []);
+          // TODO:
+        })
+        .catch(error => {
+          onFailure(error);
+        });
+      /*
+            var req = new XMLHttpRequest();
+            req.open("GET", exchangeRateUrl, true);
+            req.onreadystatechange = function(oEvent) {
+              if (req.readyState === 4) {
+                if (req.status === 200) {
+                  onSuccess(req.responseXML);
+                } else {
+                  onFailure(req);
+                }
+              }
+            };
+            //NRB url -> https://www.nrb.org.np/api/forex/v1/rates?from=2016-03-31&to=2016-04-30&per_page=100&page=1
+            req.setRequestHeader("If-Modified-Since", "Wed, 01 Jan 2080 00:00:00 GMT");
+            req.send();
+            */
     }
   }
 
@@ -385,49 +418,19 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         chart.render();
       },
 
-      generateChartData: function(respData, fromDate, toDate) {
+      generateChartData: function(payload, fromDate, toDate) {
+        var curBaseCurrency = helper.getCurrentBaseCurrency(),
+          chartD = [];
 
-        var xmlDoc = respData,
-          curBaseCurrency = helper.getCurrentBaseCurrency(),
-          todayDate = toDate,
-          intPath = "/Conversion/Currency[BaseCurrency=\'" +
-          curBaseCurrency + "\' and Date=\'" + todayDate + "\']/TargetSell",
-          intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
-
-        // -------------------------------------------------------------------------------------------- //
-        // if the toDate data isn't present, get data of an earlier date.
-        // this happens generally before 10am of toDate in NST where NRB hasn't released the rates.
-        var tempTodayDate = helper.unFormatDate(toDate),
-          tempFromDate = helper.unFormatDate(fromDate);
-
-        while (intervalNode.iterateNext() === null && tempTodayDate > tempFromDate) {
-          tempTodayDate.setDate(tempTodayDate.getDate() - 1);
-          intPath = "/Conversion/Currency[BaseCurrency=\'" + curBaseCurrency +
-            "\' and Date=\'" + helper.formatDate(tempTodayDate) + "\']/TargetSell";
-          intervalNode = xmlDoc.evaluate(intPath, xmlDoc, null, XPathResult.ANY_TYPE, null);
-        }
-        // -------------------------------------------------------------------------------------------- //
-
-        var ratePath = "/Conversion/Currency[BaseCurrency=\'" + curBaseCurrency + "\']",
-          nodes = xmlDoc.evaluate(ratePath, xmlDoc, null, XPathResult.ANY_TYPE, null),
-          result = nodes.iterateNext(),
-          chartD = [],
-          conversionTime,
-          conversionRate;
-        while (result) {
-          conversionTime = result.getElementsByTagName("Date")[0].childNodes[0],
-            conversionRate = result.getElementsByTagName("TargetSell")[0].childNodes[0];
-
-          // there are missing data sometimes, so skip them
-          if (conversionTime && conversionRate) {
-            chartD.push({
-              label: new String(conversionTime.nodeValue),
-              y: parseFloat(conversionRate.nodeValue)
-            });
-          }
-
-          result = nodes.iterateNext();
-        }
+        payload.flatMap(p => {
+          p.rates.forEach(r => r.date = p.date);
+          return p.rates;
+        }).filter(r => r.currency.iso3 == curBaseCurrency).forEach(r =>
+          chartD.push({
+            label: new String(r.date),
+            y: parseFloat(r.sell)
+          })
+        );
 
         return chartD;
       },
