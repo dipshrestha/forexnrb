@@ -29,7 +29,7 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
     this.init = function() {
 
       document.querySelector('#baseCur').addEventListener('change', function() {
-        clickHandler.chooseCurrency(this.options[this.selectedIndex].text);
+        clickHandler.chooseCurrency(this.value);
       });
 
       var chartArr = document.getElementsByClassName("np-chart");
@@ -330,14 +330,14 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         '&per_page=100&page=1';
 
       const myHeaders = new Headers();
-      myHeaders.append('pragma', 'no-cache');
-      myHeaders.append('Cache-Control', 'no-cache');
+      //myHeaders.append('pragma', 'no-cache');
+      //myHeaders.append('Cache-Control', 'no-cache');
 
       const myRequest = new Request(exchangeRateUrl, {
         method: 'GET',
         headers: myHeaders,
         mode: 'cors',
-        cache: 'no-cache',
+        //cache: 'no-cache',
       });
 
       fetch(myRequest)
