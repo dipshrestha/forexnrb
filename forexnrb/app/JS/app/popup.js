@@ -11,7 +11,7 @@ Product:        Nepal Foreign Currency Exchange
 
 Note:
 Chrome cross-domain request -> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files  --user-data-dir="/tmp" --disable-web-security
-NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
+NRB url -> https://www.nrb.org.np/api/forex/v1/rates?from=2020-09-01&to=2020-09-15&per_page=100&page=1
 */
 
 
@@ -327,18 +327,19 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         exchangeRateUrl = 'https://www.nrb.org.np/api/forex/v1/rates' +
         '?from=' + fromDateParts[2] + '-' + fromDateParts[1] + '-' + fromDateParts[0] +
         '&to=' + toDateParts[2] + '-' + toDateParts[1] + '-' + toDateParts[0] +
-        '&per_page=100&page=1';
+        '&per_page=100';
 
       const myHeaders = new Headers();
       //myHeaders.append('pragma', 'no-cache');
       //myHeaders.append('Cache-Control', 'no-cache');
 
-      const myRequest = new Request(exchangeRateUrl, {
+      const settings = {
         method: 'GET',
         headers: myHeaders,
         mode: 'cors',
         //cache: 'no-cache',
-      });
+      };
+      const myRequest = new Request(exchangeRateUrl + '&page=1', settings);
 
       fetch(myRequest)
         .then(response => {
@@ -348,11 +349,26 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
           return response.json();
         })
         .then(data => {
+          let payloads = [];
           if (data && data.status && data.status.code != 200) {
             throw new Error(JSON.stringify(data.errors.validation));
           }
-          onSuccess(data.data && data.data.payload || []);
-          // TODO:
+          const pages = data.pagination && data.pagination.pages;
+          payloads = data.data && data.data.payload || [];
+          if (pages > 1) {
+            const requests = [];
+            for (var i = 2; i <= pages; i++) {
+              requests.push(new Request(exchangeRateUrl + '&page=' + i, settings));
+            }
+            Promise.all(requests.map(r => fetch(r))).then(responses =>
+              Promise.all(responses.map(res => res.json()))
+            ).then(jsons => {
+              payloads = payloads.concat(jsons.flatMap(i => i.data && i.data.payload) || []);
+              onSuccess(payloads);
+            })
+          } else {
+            onSuccess(payloads);
+          }
         })
         .catch(error => {
           onFailure(error);

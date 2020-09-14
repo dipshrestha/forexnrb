@@ -1,3 +1,7 @@
+-- v1.2.0
+Support NRB JSON format. NRB deprecated XML formats
+Add full names to currency.
+
 -- v1.1.0
 Product name modification, bug fixes, refractoring, loading sign, data caching for optimization, changes in data format from NRB.
 
