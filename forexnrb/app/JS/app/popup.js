@@ -10,7 +10,7 @@ Author:         Sharad Subedi, Amit Jain, Dipesh Shrestha
 Product:        Nepal Foreign Currency Exchange
 
 Note:
-Chrome cross-domain request -> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files  --user-data-dir="~/forexnrb/" --disable-web-security
+Chrome cross-domain request -> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files  --user-data-dir="/tmp" --disable-web-security
 NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
 */
 
