@@ -57,8 +57,24 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
    *
    */
   var Helper = function() {
+    var minDate, maxDate,
+      MAX_DAYS = 182;
 
     return {
+      getMinDate: function() {
+        return minDate || localStorage.getItem('minDate') || this.formatDate1(this.getNST(new Date()));
+      },
+      getMaxDate: function() {
+        return maxDate || localStorage.getItem('maxDate') || this.formatDate1(this.getNST(new Date()));
+      },
+      setMinDate: function(val) {
+        minDate = val;
+        localStorage.getItem('minDate');
+      },
+      setMaxDate: function(val) {
+        maxDate = val;
+        localStorage.getItem('maxDate');
+      },
       getCurrentBaseCurrency: function() {
         if (localStorage.curBaseCurrency) {
           return localStorage.curBaseCurrency;
@@ -128,6 +144,129 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         }
         return {};
       },
+      /**
+       * Not all days data is returned from NRB!!
+       * 
+       * [getCachedChartData description]
+       * @param  {[type]} fromDateStr [description]
+       * @param  {[type]} toDateStr   [description]
+       * @return {[type]}           [description]
+       */
+      getCachedChartData1: function(fromDateStr, toDateStr) {
+        const diff = this.dateDiff(this.getNST(new Date(toDateStr)), this.getNST(new Date(fromDateStr))) + 1;
+        var payload = [],
+          localMinDate = null;
+        var y = localStorage.getItem(fromDateStr);
+        if (!y) return false;
+        y = localStorage.getItem(toDateStr);
+        if (!y) return false;
+
+        for (var i = 0; i < diff; i++) {
+          var k = this.changeAndFormatDate(fromDateStr, i); //this.formatDate1(this.changeDate(fromDateStr, i));
+          var t = localStorage.getItem(k);
+          //if (!t) {
+          //  return false;
+          //}
+          payload.push(JSON.parse(t));
+        }
+
+        var curBaseCurrency = this.getCurrentBaseCurrency(),
+          chartD = [];
+        return this.generateChartData(payload.flat(), fromDateStr, toDateStr)
+      },
+
+      setCachedChartData1: function(payload) {
+        payload.forEach(p => {
+          if (this.getMinDate() > p.date) // no need to create date object
+            this.setMinDate(p.date);
+          if (this.getMaxDate() < p.date)
+            this.setMaxDate(p.date);
+          p.rates.forEach(r => r.date = p.date);
+          localStorage.setItem(p.date, JSON.stringify(p.rates));
+        });
+
+        this.pruneCachedChartData();
+      },
+      // https://stackoverflow.com/questions/7763327/how-to-calculate-date-difference-in-javascript
+      dateDiff: function(date1, date2) {
+        date1.setHours(0);
+        date1.setMinutes(0, 0, 0);
+        date2.setHours(0);
+        date2.setMinutes(0, 0, 0);
+        var diff = date1.getTime() - date2.getTime(); // difference 
+        return parseInt(diff / (24 * 60 * 60 * 1000), 10); //Convert values days and return value      
+      },
+      changeDate: function(dateStr, diff) {
+        var tmpDate = this.getNST(new Date(dateStr));
+        if (diff == 0) return tmpDate;
+        return this.getNST(new Date(tmpDate.setDate(tmpDate.getDate() + diff)));
+      },
+      changeAndFormatDate: function(dateStr, diff) {
+        var tmpDate = new Date(dateStr);
+        if (diff != 0) {
+          if (diff < 0) diff++;
+          tmpDate = new Date(tmpDate.setDate(tmpDate.getDate() + diff));
+        }
+
+        var d = this.getNST(new Date(tmpDate))
+        var yy = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d)
+        var mm = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(d)
+        var dd = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d)
+
+        return `${yy}-${mm}-${dd}`;
+      },
+      /**
+       * Remove the dates minDate to newMinDate from the localStorage
+       *
+       * minDate --- newMinDate --- maxDate
+       * 
+       * @return
+       */
+      pruneCachedChartData: function() {
+        const newMinDate = this.changeDate(this.getMaxDate(), -MAX_DAYS)
+
+        const diff = this.dateDiff(newMinDate, this.getNST(new Date(this.getMinDate())));
+        for (var i = 0; i < diff - 1; i++) {
+          var k = this.changeAndFormatDate(newMinDate, i); //this.formatDate1(this.changeDate(newMinDate, i));
+          localStorage.removeItem(k);
+        }
+        if (diff > 0)
+          this.setMinDate(this.formatDate1(newMinDate));
+      },
+
+      /**
+       * return date in YYYY-MM-DD format
+       * 
+       * @param  {[type]} val [description]
+       * @return {[String]}     [description]
+       */
+      formatDate1: function(val) {
+        var d = this.getNST(new Date(val))
+        var yy = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d)
+        var mm = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(d)
+        var dd = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d)
+
+        return `${yy}-${mm}-${dd}`;
+      },
+
+      generateChartData: function(payload, fromDate, toDate) {
+        var curBaseCurrency = this.getCurrentBaseCurrency(),
+          chartD = [];
+
+        payload.
+        /*flatMap(p => {
+                  p.rates.forEach(r => r.date = p.date);
+                  return p.rates;
+                }).*/
+        filter(r => r && r.currency && r.currency.iso3 == curBaseCurrency).forEach(r =>
+          chartD.push({
+            label: new String(r.date),
+            y: parseFloat(r.sell)
+          })
+        );
+
+        return chartD;
+      },
       setCachedChartData: function(days, data) {
         var key = "k" + days;
         var curData = this._getCachedChartData(days) || {};
@@ -151,6 +290,16 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         return this.formatDate(date);
       },
 
+      getFromDateStr: function(days) {
+        var date = this.getNST(new Date());
+        return this.changeAndFormatDate(date, -days); //this.formatDate1(this.changeDate(date, -days));
+      },
+      getToDateStr: function(date) {
+        if (date == null) {
+          date = this.getNST(new Date());
+        }
+        return this.formatDate1(date);
+      },
       getFromDateParts: function(days) {
         var date = this.getNST(new Date());
         date.setDate(date.getDate() - days + 1);
@@ -175,7 +324,7 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
       },
       flushLocalStorage: function() {
         for (var p in localStorage) {
-          delete localStorage[p];
+          localStorage.removeItem(p);
         }
       },
       // get trend label to be displayed in chart
@@ -218,18 +367,27 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         this.render();
       },
       render: function() {
-        var fromDate = helper.getFromDateParts(helper.getTrendDays()),
-          toDate = helper.getToDateParts();
+        var fromDate = helper.getFromDateStr(helper.getTrendDays()), //helper.getFromDateParts(helper.getTrendDays()),
+          toDate = helper.getToDateStr(); //helper.getToDateParts();
         this.showLoading();
 
         // if data is already present don't make a call
-        var days = helper.unFormatDate(toDate) - helper.unFormatDate(fromDate);
-        var cachedData = helper.getCachedChartData(days);
+        //var days = helper.unFormatDate(toDate) - helper.unFormatDate(fromDate);
+        var cachedData = helper.getCachedChartData1(fromDate, toDate);
 
         if (!cachedData) {
-          var success = this.showChart.bind(this),
+          // if the fromDate is less than minDate
+          var localMinDate = helper.getMinDate(),
+            localMaxDate = helper.getMaxDate();
+          if (helper.dateDiff(helper.getNST(new Date(localMinDate)), helper.getNST(new Date(fromDate))) > 0) {
+            localMinDate = fromDate;
+          }
+          if (helper.dateDiff(helper.getNST(new Date(localMaxDate)), helper.getNST(new Date(toDate))) < 0) {
+            localMaxDate = toDate;
+          }
+          var success = this.showChart1.bind(this),
             failure = this.showError.bind(this);
-          exchangeDataLoader.load(fromDate, toDate, success, failure);
+          exchangeDataLoader.load(localMinDate, localMaxDate, success, failure);
         } else {
           this.showChartFromData(cachedData);
         }
@@ -240,6 +398,34 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
 
         this.show();
       },
+      showChart1: function(payload) {
+        helper.setCachedChartData1(payload);
+        var fromDate = helper.getFromDateStr(helper.getTrendDays()),
+          toDate = helper.getToDateStr();
+        var chartData = helper.getCachedChartData1(fromDate, toDate);
+        //chartCreator.generateChartFromData(payload);
+        this.showChartFromData(chartData);
+        //this.show();
+      },
+      /*
+      generateChartData: function(payload, fromDate, toDate) {
+        var curBaseCurrency = this.getCurrentBaseCurrency(),
+          chartD = [];
+
+        payload.flatMap(p => {
+          p.rates.forEach(r => r.date = p.date);
+          return p.rates;
+        }).filter(r => r.currency.iso3 == curBaseCurrency).forEach(r =>
+          chartD.push({
+            label: new String(r.date),
+            y: parseFloat(r.sell)
+          })
+        );
+
+        return chartD;
+      },
+      */
+      //payload
       showChartFromData: function(chartData) {
         chartCreator.generateChartFromData(chartData, "chartPlaceholder", helper.getChartType(),
           helper.getFromDateParts(helper.getTrendDays()), helper.getToDateParts());
@@ -317,16 +503,13 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
    */
   var ExchangeDataLoader = function() {
 
-    // https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=2016&MM1=04&DD1=30
-    // check the 'pages' parameter in response
+    // TODO: check the 'pages' parameter in response
     // and if it's > 1 then do subsequent ajax calls to fetch all data
     this.load = function(fromDate, toDate, onSuccess, onFailure) {
 
-      var fromDateParts = fromDate.split('-'),
-        toDateParts = toDate.split('-'),
-        exchangeRateUrl = 'https://www.nrb.org.np/api/forex/v1/rates' +
-        '?from=' + fromDateParts[2] + '-' + fromDateParts[1] + '-' + fromDateParts[0] +
-        '&to=' + toDateParts[2] + '-' + toDateParts[1] + '-' + toDateParts[0] +
+      var exchangeRateUrl = 'https://www.nrb.org.np/api/forex/v1/rates' +
+        '?from=' + fromDate +
+        '&to=' + toDate +
         '&per_page=100&page=1';
 
       const myHeaders = new Headers();
@@ -337,7 +520,7 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         method: 'GET',
         headers: myHeaders,
         mode: 'cors',
-        //cache: 'no-cache',
+        cache: 'no-cache',
       });
 
       fetch(myRequest)
@@ -352,7 +535,6 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
             throw new Error(JSON.stringify(data.errors.validation));
           }
           onSuccess(data.data && data.data.payload || []);
-          // TODO:
         })
         .catch(error => {
           onFailure(error);
@@ -384,7 +566,7 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         return "N/A";
       },
       generateChart: function(respData, chartPlaceholder, chartType, fromDate, toDate) {
-        var chartData = this.generateChartData(respData, fromDate, toDate);
+        var chartData = helper.generateChartData(respData, fromDate, toDate);
 
         // store in the localStorage!
         var days = helper.unFormatDate(toDate) - helper.unFormatDate(fromDate);
@@ -393,7 +575,6 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
 
         this.generateChartFromData(chartData, chartPlaceholder, chartType, fromDate, toDate);
       },
-
       generateChartFromData: function(chartData, chartPlaceholder, chartType, fromDate, toDate) {
         var chartOptions = this.generateChartOptions(chartData, chartType),
           chart = new CanvasJS.Chart(chartPlaceholder, chartOptions);
@@ -402,24 +583,24 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
         helper.setTodayRate(this.getChartTodayRate(chartData));
         chart.render();
       },
+      /*
+            generateChartData: function(payload, fromDate, toDate) {
+              var curBaseCurrency = helper.getCurrentBaseCurrency(),
+                chartD = [];
 
-      generateChartData: function(payload, fromDate, toDate) {
-        var curBaseCurrency = helper.getCurrentBaseCurrency(),
-          chartD = [];
+              payload.flatMap(p => {
+                p.rates.forEach(r => r.date = p.date);
+                return p.rates;
+              }).filter(r => r.currency.iso3 == curBaseCurrency).forEach(r =>
+                chartD.push({
+                  label: new String(r.date),
+                  y: parseFloat(r.sell)
+                })
+              );
 
-        payload.flatMap(p => {
-          p.rates.forEach(r => r.date = p.date);
-          return p.rates;
-        }).filter(r => r.currency.iso3 == curBaseCurrency).forEach(r =>
-          chartD.push({
-            label: new String(r.date),
-            y: parseFloat(r.sell)
-          })
-        );
-
-        return chartD;
-      },
-
+              return chartD;
+            },
+      */
       generateChartOptions: function(chartData, chartType) {
 
         var minRate = this.getChartMinRate(chartData),
@@ -471,7 +652,7 @@ NRB url -> https://www.nrb.org.np/exportForexXML.php?YY=2016&MM=03&DD=31&YY1=201
     var clickHandler = new ClickHandler(helper, exchangeDataLoader, chartCreator);
     var app = new App(clickHandler);
 
-    // helper.flushLocalStorage(); //only for DEBUG!
+    helper.flushLocalStorage(); //only for DEBUG!
     app.init();
   }
 
