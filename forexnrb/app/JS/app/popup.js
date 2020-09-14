@@ -249,7 +249,7 @@ NRB url -> https://www.nrb.org.np/api/forex/v1/rates?from=2020-09-01&to=2020-09-
       show: function() {
         var curBaseCurrency = helper.getCurrentBaseCurrency(),
           todayRate = helper.getTodayRate(),
-          innerval = "Current exchange rate 1&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;" + "NRS";
+          innerval = "Today's rate :&nbsp;1&nbsp;" + curBaseCurrency + " = " + todayRate + "&nbsp;" + "NRS";
         document.getElementById("exchangeRate").innerHTML = innerval;
         document.getElementById('curDate').innerHTML = new Date().toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
         document.getElementById('baseCur').value = curBaseCurrency;
