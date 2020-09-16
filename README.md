@@ -7,19 +7,25 @@ In addition to giving the most current exchange rate, this extension also shows 
 These are the major international currencies supported by Nepal Rastra Bank.
 
 <ul>
-<li>U.S. dollar
-<li>European euro
-<li>UK pound sterling
-<li>Swiss franc
-<li>Australian dollar
-<li>Canadian dollar
-<li>Singapore dollar
-<li>Japanese yen
-<li>Chinese Renminbi (Yuan)
-<li>Saudi Arabian Riyal
-<li>Qatari Riyal
-<li>Thai Baht
-<li>UAE Dirham
-<li>Malaysian Ringgit
-<li>South Korean Won
+<li>USD : U.S. Dollar</li>
+<li>KRW : South Korean Won</li>
+<li>JPY : Japanese Yen</li>
+<li>QAR : Qatari Riyal</li>
+<li>AUD : Australian Dollar</li>
+<li>EUR : European Euro</li>
+<li>GBP : UK Pound Sterling</li>
+<li>CAD : Canadian Dollar</li>
+<li>SGD : Singapore Dollar</li>
+<li>SAR : Saudi Arabian Riyal</li>
+<li>CNY : Chinese Yuan</li>
+<li>THB : Thai Baht</li>
+<li>AED : UAE Dirham</li>
+<li>MYR : Malaysian Ringgit</li>
+<li>SEK : Swedish Kroner</li>
+<li>DKK : Danish Kroner</li>
+<li>HKD : Hong Kong Dollar</li>
+<li>KWD : Kuwaity Dinar</li>
+<li>BHD : Bahrain Dinar</li>
+<li>CHF : Swiss Franc</li>
+<li>INR : Indian Rupee</li>
 </ul>
